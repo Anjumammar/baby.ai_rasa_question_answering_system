@@ -1,0 +1,3418 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - how are you
+    - hey how are you doing
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you
+    - Are you a robot
+    - are you chatboat
+    - what is your name
+    - what can i call you
+    - How may i call you
+    - How you born
+    - who made you
+
+
+
+- intent: story_play
+  examples: |
+    - play me a story
+    - i want to listen story
+    - do you have any story for me
+    - tell me a story
+    - do you have any fairy tell for me
+    - i want to listen fairy tell
+    - i wanted to listen a story
+    - can you tell me a story
+
+- intent: song_play
+  examples: |
+    - play me a song
+    - i want to listen song
+    - do you have any song for me
+    - tell me a song
+    - play a good song
+
+- intent: Vocabulary_improve
+  examples: |
+     - what is the meaning of sky is the limit
+     - how we pronounce nostalgia
+     - what is asyncio
+
+- intent: calculator
+  examples: |
+    - [add](calc) [55](number) and [65](number)
+    - [multiply](calc) [54](number) and [67](number)
+    - [devide](calc) [34](number) and [17](number)
+    - [subtract](calc) [54](number) and [32](number)
+    - [devide](calc) [56](number) and [34](number)
+    - [add](calc) [45](number) and [35](number)
+- intent: General_knowledge
+  examples: |
+    - Was Roosevelts family rich
+    - How are Isabelline penguins different from most penguins
+    - Egyptian Arabic is spoken by how many in Egypt
+    - What does violincello mean
+    - James Watts improvements of what were fundamental to the changes wrought by the Industrial Revolution
+    - Where is the mouth of an octopus
+    - Who was first apprenticed to a fuller to learn the clothmaking trade
+    - Where do most people in urban Saint Petersburg live
+    - In what year did he become a professor of physics at the Royal School in Como
+    - What happened in moravia  lower austria  silesia  and styria  though in all cases  these territories were held in fief under other more senior feudal lords
+    - Is the Aburukuwa a type of drum
+    - Was Abraham Lincoln the first President of the United States
+    - Are beetles endopterygotes with complete metamorphosis
+    - What unrelated water birds are ducks sometimes confused with
+    - How many Korean speakers are there
+    - Who were Grover Clevelands parents
+    - Why are relations with Malaysia and Indonesia important
+    - Was Millard Fillmore born on January 7 1800
+    - Which is the nearest star to planet earth
+    - Was PierreAuguste Renoir born in Limoges HauteVienne France the child of a working class family
+    - What shape are the eggs of the larest species of turtle
+    - Do kangaroos eat plants
+    - Are upright pianos called vertical pianos
+    - What event marked the end of the Old Portuguese period
+    - Where is Henri Becquerel from
+    - When did Picasso make his first trip to Paris
+    - Are books magazines and newspapers written in English available
+    - Are large pythons potential prey for leopards
+    - How many stars are there in the American flag
+    - How many trades can the NSE make per day
+    - Are violas and cellos in the same family of instruments as violins
+    - In Turkish which syllable usually has the stress
+    - How long was Lincolns legal Career
+    - How many main varieties of Indian flutes are currently used
+    - Was Amedeo Avogadro born in North America
+    - Do sea otters live along the Pacific coast
+    - In 1908 the year  of his death was Becquerel elected Permanent Secretary  of the Acadmie  des  Sciences
+    - Had Fords wife married before
+    - Are penguins birds
+    - Is an acoustic guitar dependent on an external device
+    - Is it true that it angered many residents of the thirteen colonies
+    - Did the Mughals arrive in Dhaka
+    - What does Taipei produce
+    - What is the best known story about a swan
+    - How many letters are there in the English alphabet
+    - Which is the worlds larges
+    - Is the leopard an Old World mammal
+    - Which building is the site of the German parliament
+    - In 1949 where did Communist forces enter without a fight
+    - Where did he publish his invention of the Voltaic pile battery
+    - From what type of Cymbals can a expert player obtain an enormous dynamic range
+    - What is widely used by the Lebanese especially for administrative purposes
+    - Did the Qataris not choose as their negotiator the respected entrepreneur and longtime resident of Doha  Muhammed bin Thani
+    - Did the family move to Paris as well as there Coulomb studied at the prestigious Collge des QuatreNations
+    - Did Fillmore run for President a second time
+    - What dwindled and eventually died out starting with the Hartford Convention
+    - How many of James Watts children did not live to adulthood
+    - Is Volta buried in the city of Pittsburgh
+    - Is Arabic the largest member of the Semitic language family
+    - Is Canada a geographically vast and ethnically diverse country
+    - Was Sir Isaac Newton an English physicist and mathematician
+    - When was Arabic calligraphy invented
+    - How many civilians died in the 1998 US embassy bombing
+    - How many species of true eels are there
+    - Did the modern hihat evolve from clash cymbals
+    - What were some other names of the city
+    - Who was the sponsor and mentor of Faraday
+    - Did the election of 1800 not become a bitter and volatile battle  with each side expressing extraordinary fear of the other party and its policies
+    - Does the mother care for the young
+    - Where was Henri Becquerel born
+    - How do turtles reproduce
+    - Was Avogadro a  professor at the University of Turin
+    - Was it used as the exclusive lingua franca on the island of Sri Lanka for almost 350 years
+    - Is he best known for cofounding the Cubist movement and for the wide variety of styles embodied in his work
+    - Which is the smallest continent in the world
+    - What was Maynard Ferguson noted for being able to play accurately
+    - Are pronouns in Literary Arabic marked for person  number and gender
+    - Is it true that he practiced law in fredericksburg
+    - What happened in a log cabin in summerhill  new york
+    - Does Coulomb leave a legacy as a pioneer in the field of geotechnical engineering for his contribution to retaining wall design
+    - Do otters live in water
+    - What were strings first made out of
+    - Is the Asian elephant larger than the African
+    - Did CharlesAugustin de Coulomb live to be 80 years old
+    - What defended slavery owned slaves and set up a Sunday school for them
+    - What are some annual festivals in Taipei
+    - What are vehicles that frequent isolated roads often fitted with
+    - Is it the world s second largest country by total area
+    - Before 1796 was Lombardy ruled by Austria
+    - Have coleopterists formed organisations to facilitate the study of beetles
+    - What happened in nineteen fifty seven
+    - Who did Wilson win in 1917
+    - What does the word duck mean
+    - Is English the official language
+    - When was Henri Becquerel born
+    - Felis pardus was what
+    - From which languages is Korean descended
+    - Is it a constitutional democracy  where the president fulfills the roles of both head of state and head of government
+    - Is Indonesia the worlds largest archipelagic state
+    - Where was the oldest flute ever discovered found
+    - Is german an inflected  language
+    - Is aquatic respiration in Australian freshwater turtles being studied
+    - Wasnt Michelangelo a homosexual
+    - Has the San Lorenzo Megaport Project been completed
+    - Was Isaac Newton educated at The Kings Schol Grantham
+    - When did Anders Celcius publish his observations on the aurora borealis
+    - Do males use a specialized arm called a hectocotylus to insert spermatophores
+    - Where is the headstock located
+    - When did organized agriculture appear in the Nile Valley
+    - Is Uruguays warmest month June
+    - In fact was Avogadro s  famous  1811  paper written in French
+    - Was Indonesia named after it became an independent country
+    - What company administers Leichtensteins railways
+    - What is polar bears skin color
+    - Is the study of beetles called coleopterology  and its practitioners are coleopterists
+    - Is it true that Becquerel wrapped a fluorescent substance in photographic plates
+    - Was Gerald Ford the 38th President of the United States
+    - What do kangaroos use for crawlwalking
+    - Are all spoken varieties of Chinese tonal and analytical
+    - Is romania a semipresidential unitary state
+    - When did James Monroe die
+    - Why is Copenhagen a regional hub
+    - What is the most common type of trumpet
+    - When does a flute produce sound
+    - Are beetles insects
+    - Is the comic strip Mallard Fillmore named after the president
+    - Why doesnt Romania have a state religion
+    - Can the origins of cymbals be traced back to prehistoric times
+    - When was the Giant Pandas genome sequenced
+    - What is the official name of Jakarta
+    - Of whose continual poor health was the cause never precisely determined
+    - Are feminines declined in the singular
+    - Did Caunte take control of the English throne in 101
+    - Which future Heisman Trophy winner did Ford tackle
+    - How many strings does a guitar typically have
+    - Did the golden age of xylophones come before or after the first usage of the Europeanderived orchestral
+    - According to art historian Helen Gardner were the scope and depth of his interests without precedent and his mind and personality seem to us superhuman the man himself mysterious and remote
+    - What suborder of turtle draws its head into its shell
+    - Is Avogadro hailed as a founder of the atomicmolecular theory
+    - Has the dragon historically served as Chinas national emblem
+    - What is the most common color of ants
+    - What are the names of a pianos pedals
+    - Was faraday Christian of the small Sandemanian denomination
+    - Was Coolidge opposed in the Republican nomination for Governor of Massachusetts in 1918
+    - How can beetle larvae be differentiated from other insect larvae
+    - Are vowels never reduced  regardless of stress
+    - What is the world population of Asian elephants
+    - Is Lima the capital of Peru
+    - Was Faraday born in England
+    - Who boasted a sizeable community of 100000 by 1869
+    - Does Swedish use the perfect participle to form the present perfect tense
+    - Which defense mechanism uses colour or shape to deceive potential enemies
+    - Has Equestrianism been a long tradition popular among the Tsars and aristocracy
+    - Is the octopus a cephalopod
+    - With what party did Adams run for presidency
+    - Is the Giant Panda a mammal
+    - What are the ant colonies that lack queens called
+    - Was Adams the first to introduce a bicameral legislature
+    - Did Lincolns Wifes Family support slavery
+    - Are elephants the largest land animals alive today
+    - Who was Grants brother in law
+    - Who created Monas Park
+    - Do butterflies have two eyes
+    - Who made Volta a count
+    - When did the crime level become higher
+    - Is the leopard smaller than the other members of Panthera
+    - Is Portuguese an official language of several international organizations
+    - Would it be common for tigers to mate in January
+    - Is rainfall very low
+    - Does Romania share a border with Ukraine
+    - Is Calvin Jr older than John Coolidge
+    - Is it true that he published a collection of 316 observations
+    - Sibiu a large city in Transylvania was chosen as European Capital of Culture in what year
+    - did he discover benzene
+    - What is the earliest date of the trumpet
+    - Is an official language of Canada German
+    - What was the nickname of Theodore Roosevelts sister Anna
+    - Give an example of the tributary states of the Majapahit kingdom in eastern Java
+    - When did Charles IX order Amati to construct 24 violins for him
+    - What is the capital city
+    - What happened in 1810
+    - Was Henri Becquerel first in his family to occupy the physics chair at the Museum National dHistoire Naturelle
+    - What city in the UK has been subjected to bouts of terrorism
+    - Does Exposure to air cause the larva to begin breathing
+    - Is turtle soup considered a delicacy
+    - Was it a twosentence description that completely caught the essence of Ulysses S Grant
+    - Was Alessandro Volta a professor of chemistry
+    - Has the flute been dated to prehistoric times
+    - Did he publish an important investigation of the laws of friction
+    - Where is the largest gray wolf population thought to be found
+    - What cello manufacturer should I buy from if I want to play outside
+    - When was a 43acre Mission Bay campus opened
+    - Why are sidenecked turtles called sidenecked turtles
+    - Who features violinist Boyd Tinsley
+    - Regarding this topic what did the Revolution do
+    - The collective noun romp is sometimes used for a group of what
+    - What language do they speak in Kuala Lumpur
+    - Why did Cleveland want to hide his cancer surgery from the public
+    - What years were Coolidges two sons born in
+    - When did Islam become the dominant religion in Java and Sumatra
+    - Was Amedeo Avogadro born in Turin August 9th 1776 to a noble ancient family of Piedmont Italy
+    - Did Johann Josef Loschmidt first calculate the value of Avogadros number
+    - Are Canada s two official languages English and French
+    - Was Watt ranked 22nd in Michael H Hart s list of the most influential figures in history
+    - Who represented the Continental Congress in Europe
+    - Did CharlesAugustin de Coulomb find any relationship between electric charges and magnetic poles
+    - When was the reunification of Vietnam
+    - What is a trumpet constructed of
+    - What is the largest religious group in Canada
+    - How many municipalities are within Oberland
+    - Did Roosevelt receive a Medal of Honor
+    - Who was Kwame Nkrumah
+    - During his lifetime did Pollock enjoy considerable fame and notoriety
+    - How many sister cities does the City of Melbourne have
+    - Has an octopus a hard beak with its mouth at the center point of the arms
+    - Are Gray Wolves native to North America
+    - How many years ago did African people spread across 31 francophone African countries can speak French either as a first or second language
+    - When did he publish another memoria
+    - Are they constructed of brass tubing bent twice into an oblong shape and are played by blowing air through closed lips producing a buzzing sound which starts a standing wave vibration in the air column inside the trumpet
+    - What do turles use to breathe in the water
+    - Was he a member of the Royal Superior Council on Public Instruction
+    - Who was the first woman to fly across the Atlantic
+    - Which nation invaded Singapore during World War II
+    - Is a collision with a vehicle capable of killing a kangaroo
+    - When did Isaac Newton discover the generalized binomial theorem
+    - When do bumblebee colonies reach peak population
+    - What is the most common romanization standard for Standard Mandarin today
+    - Do otters enjoy playing
+    - How did newspapers respond to Roosevelt inviting Brooker T Washington to dinner at the White House
+    - What is the smallest suborder of turtles
+    - How many strings does a guitar have
+    - What did Taylor and Fillmore disagree upon
+    - Did Becquerel study science at the cole des Ponts et Chauss
+    - Was education another area  of service  for Faraday
+    - What is the official standard language used by the Peoples Republic of China the Republic of China and Singapore where it is called Huayu
+    - Do ants thrive in most ecosystems
+    - Whate is the usual pitch range of a violin
+    - Where was Isaac Newton buried
+    - Why do some people believe that lefthanded people should learn to play guitars as righthanded people do
+    - What was the result of the rejection of the Jay Treaty
+    - What shape are a leopards black rosettes in East Africa
+    - What countries border Egypt
+    - How many years are there in a millennium
+    - What is the Order of Santiago
+    - How many lungs does the human body have
+    - When did Baldassare Castiglione author of Il Cortegiano   The Courtier   write
+    - Which language is used by the computer to process data
+    - Is Antwerp a city
+    - Is lyre played in mordern Greece
+    - How long is a leopards tail
+    - What is the first number on the page
+    - Are studies insufficient evidence for global protection
+    - Why does Arabic heavily influence European languages
+    - Why did Indonesia break off relations with the Peoples Republic of China
+    - What part of the cymbal is the bell
+    - Are there cathedrals scattered all across Finland
+    - Do lobsters feel pain
+    - The Historical Society of the Principality of Liechtenstein plays what
+    - Give an example of the best known symphony orchestras in the world under the leadership of conductors Yevgeny Mravinsky and Yuri Temirkanov
+    - Is the population of wild Giant  Pandas growing
+    - Is watt commemorated by statuary in George Square Glasgow and Princes Street Edinburgh
+    - Was Henri Becquerel the sole winner of the 1903 Nobel Prize in Physics
+    - Did Nikola Tesla use a technique called picture thinking
+    - What is another term for Korean adjectives
+    - What is the official language of Liechtenstein
+    - Is a kangaroo on the Australian coat of arms
+    - Is it the second smallest independent country in south america  larger only than suriname and the french overseas department of french guiana
+    - Is avogadro s  number commonly used to compute  the results  of chemical reactions
+    - The most active Academies of Arabic Language are found where
+    - Where did Orang Laut people live
+    - When was a threeholed flute made from a mammoth tusk discovered
+    - What is the tallest building in the world
+    - Is Malay in the Austronesian family of languages
+    - Does Uruguay have cold summers
+    - The sociolinguistic situation of Arabic provides a prime example of what
+    - Can an elephant kill a rhinoceros
+    - Do small tremors occur in Ottawa
+    - Are otters very active
+    - Did Ulysses win the Battle of Champion Hill
+    - What was Canadas most important industry until the 1800s
+    - Did Henri Becquerel intentionally discover radioactivity
+    - Which album was the song The Bonny Swans from
+    - What happened in 1917
+    - Who was a farmer and later a land surveyor for the government
+    - Can turtles spend all their time underwater
+    - What is the official language of Turkey
+    - Who determined the dependence of the boiling of water with atmospheric pressure
+    - What is the name of a university or similar institution for imparting higher education in Beijing
+    - Do male giraffes have larger horns than female giraffes
+    - Is Egypt bordered by the Gaza Strip
+    - What did Cleveland die from
+    - Wasnt Leonardo da Vinci valued as an engineer
+    - What happened in 1833
+    - Is the lyre a stringed musical instrument
+    - Who used hardened brushes sticks
+    - Does a classical lyre have a fingerboard
+    - Who did Ford nominate for Vice President
+    - Did James Monroe attend the College of William and Mary
+    - Why did Grant say Damn I had nothing to do with this batte
+    - Was the xylophone associated with the folk music of the United States by the 19th century
+    - What happens when the srivijaya kingdom formed trade links
+    - What are the ways to join groups of nouns
+    - Can black swans swim with only one leg
+    - What is the most densely populated independent country in the world
+    - What is the name of an adult female
+    - What do turtle eggs preared to eat consist mainly of
+    - What is used to tune a cello
+    - Give an example of the official languages of the special administrative region of Macau and East Timor
+    - Have there been other US presidents that have visited Cuba
+    - Are turtles being examined for longevity genes
+    - Did he build the first practical reflecting telescope
+    - How many black keys do modern pianos have
+    - Why is the Giant Panda an endangered species
+    - What does Avogadros Law state
+    - Who constructed a kit using diatonic and chromatically tuned drums
+    - Did Wilson have any siblings
+    - Is Copenhagen completely surrounded with water
+    - Did Bartolomeo Cristofori invent the modern piano
+    - Is Taipei in a valley
+    - Is there a thriving industry in the collection of beetle specimens for amateur and professional collectors
+    - Do linguists consider Malay to be a single language
+    - What is the name of the largest church in Montreal
+    - Was Calvin Coolidge the twentyninth vice president
+    - Why does the phrase elephants never forget have no metaphorical meaning
+    - Do sea otters have a layer of fat like whales
+    - Was it likely that the xylophone reached Europe during the Crusades
+    - Did Romania declare neutrality during World War I
+    - Who is depicted holding the flag in the famous painting of Washington Crossing the Delaware
+    - Why is a police whistle very wide for its pitch
+    - Why is Antwerp important to fashion
+    - Is James Monrow the fifth president of US
+    - Have adverbs of time to appear in the third place in the sentence  just after the predicate
+    - Who left Verroccios studio
+    - What family is Malay a member of
+    - Are there any cities named Santiago in the United States
+    - When do African elephants lie down
+    - Did Avogadro submit his poem
+    - Is the electrolyte sulphuric acid
+    - Antwerp is to the east of what river
+    - He discovered an inverse relationship of what
+    - When did Coulomb return to Paris
+    - Does Portuguese contain words from the Arabic language
+    - What does the Internet prefix WWW stand for
+    - Where are the only surviving giant tortoises
+    - Is Uruguays capital Montevideo
+    - Was Lorenzo Romano Amedeo Carlo Avogadro an Italian savant
+    - When did Roosevelt die
+    - Where is the Park of the Reserve located
+    - Which is the subSaharan indigenous language with the greatest number of speakers
+    - What is the center of a cymbal called
+    - When did Adams graduate from college
+    - What land animal is larger than an elephant
+    - Are there many words in Malay that use natural gender
+    - Did Uruguay host the first ever World Cup
+    - What was the name of James Watts mother
+    - Does Romania border Hungary
+    - What is the most extensively celebrated holiday
+    - Did Miles Davis play the trumpet
+    - What was Michael Faradays profession
+    - Are penguins considered higher waterbirds
+    - Was Faraday considered a gentleman
+    - What makes it more difficult for a diving duck to fly
+    - What organs gives a bull ant its good sight
+    - Which fruit inspired Isaac Newtons theory of gravitation
+    - Is an otter s den called a holt
+    - How many verb paradigms are there in Korean
+    - Was Fillmore one of the founders of the University of Buffalo
+    - If a turtle egg was kept warm what would likely hatch
+    - What is the capital of the United States
+    - Who is the mayor of Ottawa
+    - Did they not claim Ford s pardon was quid pro quo in exchange for Nixon s resignation
+    - Forward erect ears and slightly bristle hackles are a sign of what in wolves
+    - What do zebras eat
+    - What are the three segments of an ant
+    - What carried with it a tacit recognition of Qatars status as distinct from Bahrain
+    - Who won the 1903 Nobel Prize in Physics for discovering radioactivity
+    - What languages has Malay borrowed words from
+    - About how tall is a typical studio piano
+    - Which is the hardest substance available on earth
+    - In what year did Henri Becquerel die
+    - What religions are found in Uruguay
+    - Was Volta an Italian physicist
+    - When did Tesla demonstrate wireless communication radio
+    - Is English the language most often spoken in Montreal
+    - Who was born precisely at midnight during an electrical storm  to a Serbian family in the village of Smiljan near Gospi  in the Lika region of the Croatian Krajina in Military Frontier  part of the Austrian Empire   in the presentday Croatia
+    - Is the violin supported by the left shoulder
+    - Would Bundeslnder not accept North Rhine Westphalia and Bavaria
+    - Sea otters eat what
+    - What airports does Kuala Lumpur have
+    - How many people speak Turkish worldwide
+    - How many people did the 1970 Bhola cyclone kill
+    - Did Volta marry before he became professor of experimental physics at the University of Pavia
+    - Is Canada a member of the OECD
+    - Grant was elected president as a Republican in what year
+    - How do eels begin life
+    - Do otters eat fish
+    - Can the title of this famous 1811 paper be roughly translated into English as essay on determining the Relative Masses of the Elementary Molecules of Bodies
+    - Does Romania share the same language with Moldova
+    - Which harmonics can produce any notes above middle C
+    - What was Grants political affiliation
+    - What is the only variety of modern Arabic that has acquired official language status
+    - Are diving ducks heavier tha dabbling ducks
+    - What is the official language of North Korea
+    - Are several species of ants able to use the Earths magnetic field
+    - Which festival is known as the festival of colors
+    - Does the octopus have a hard beak
+    - What will a giraffe use to clean off any bugs that appear on its face
+    - Have cymbals been used historically to suggest bacchanal
+    - Is Central Park adjacent to Uhuru Park
+    - Why are sea otters nearly extinct
+    - is there a chinese community in jakarta
+    - Did Millard Fillmore die on March 8 1974
+    - Did John Adams get along with Alexander Hamilton
+    - How did Fillmore ascend to the presidency
+    - In AD 39 King Purnawarman established Sunda Pura as a new capital city for the kingdom located at the northern coast of where
+    - Where was Isaac Newton born
+    - What was made in Russias largest foundry
+    - Was the Luther Bible by Martin Luther printed
+    - Do all ducks quack
+    - What is given for the number of native speakers
+    - Where was Michael Faraday born
+    - Is it true that he shared the nobel prize in physics
+    - Can the title of this famous 1811 paper be roughly translated into english
+    - What happened from 1730 to 1744
+    - Why was the capital of Uruguay founded
+    - Were trumpet players heavily guarded
+    - How many years ago was it when Faraday wrote a letter to The Times on the subject of the foul condition of the River Thames  which resulted in an oftreprinted cartoon in Punch
+    - What contribution did CharlesAugustin de Coulomb make to the field of geotechnical engineering
+    - What is Canadas national unemployment rate
+    - Which is the largest continent in the world
+    - when did kuala lumpur become a federal territory of malaysia
+    - How much do wolves weigh
+    - How many days are there in a normal year
+    - Did Norman Rockwell spend the winter months as artistinresidence at Otis College of Art as well as Design
+    - How many tones do Northern varieties have
+    - What is the middle pedal called on grand pianos
+    - Who makes up Ghanas Parliament
+    - Is foie gras often made from ducks
+    - What is the standard taste of the water
+    - When did written Vietnamese become the official administrative language
+    - Who founded Montevideo
+    - Are giraffes hunted for their hides
+    - Does Melbourne have a large international student community
+    - What is responsible for converting the hydrogen byproduct of fermentation into acetate
+    - Did he become a professor before the revolutionary movements against the king of Sardinia
+    - Does Montreal contain the largest church in Canada
+    - A semiaquatic marine mammal  the polar bear has what
+    - For how many years did Alessandro Volta live
+    - How many different names did Chinese writings give to the panda
+    - Does Theodore Roosevelt have a brother
+    - Did CharlesAugustin de Coulomb come from a poor family
+    - Do giraffes give birth standing up
+    - How many legs does a spider have
+    - What Roman province was Liechtenstein part of
+    - Where is the Kven language spoken
+    - Do both sexes of giraffe have horns
+    - He became chief engineer in the Department of Bridges and Highways in what year
+    - What is the capital of Indonesia
+    - What does singa mean
+    - In what year did Henri Becquerel win the Nobel Prize in Physics
+    - How many countries in Europe are bigger than Romania
+    - What makes San Francisco among the topten North American destinations for conventions and conferences
+    - When did CharlesAugustin de Coulomb retire to a small estate he possessed at Blois
+    - What is Ottawas junior ice hockey team
+    - Has this inspired genetic researchers to begin examining the turtle genome for longevity genes
+    - What is Jakarta
+    - Is it true that adams had spent some time as the ambassador
+    - Is it not also one of the two official languages of the Yanbian Korean Autonomous Prefecture in China
+    - Where is Uruguays oldest church
+    - What is Antwerp
+    - What is cello an abbreviation of
+    - Is he best known for developing Coulombs law the definition of the electrostatic force of attraction and repulsion
+    - Were the letters first annotated in 1913 by Theos widow Johanna van GoghBonger
+    - Was he a child prodigy who was educated by his father a civil servant
+    - Did Horace Greenley lose in the presidential elections of 1872
+    - Did Tesla study electrical engineering
+    - Are wolves built for stamina
+    - Do some caterpillars produce vibrations as well as sounds
+    - Does the de Young museum house the Asian Art Museum
+    - What are modern guitar strings constructed of
+    - What transnational bridge was completed in 2000
+    - Where is CharlesAugustin de Coulomb from
+    - Are elephants mammals
+    - Where is Finland located
+    - What is the caridoid escape reaction
+    - Why is the watt named after Watt
+    - Was Santiago the name of an indiepunk band
+    - What makes penguins so agile in the water
+    - Are local variations in the formal written version of the language quite limited  being restricted largely to the spelling differences between British and American English
+    - Does Egypts foreign policy operates along moderate lines
+    - Did Faraday also discover the laws of electrolysis
+    - Global warming is caused by the excess of which type of gas
+    - Loschmidt calculated first the value of what
+    - hard
+    - Are xylophone bars made of rosewood
+    - How many weeks are there in one year
+    - Have kangaroos fared well since European settlement
+    - How many suborders are turtles divided into
+    - When did Berlin give up its status as a free Hanseatic city
+    - Did Amedeo Avogadro graduate
+    - How many Swedish speakers were reported in Canada in 2001
+    - Has Singapore Changi Airport a network of 81 airlines connecting Singapore to 185 cities in 58 countries
+    - Who sets up shrines
+    - What centred in Sierra
+    - Is the tuning GDAE used for most violin music
+    - Have kangaroos large  powerful hind legs  large feet adapted for leaping  a long muscular tail for balance  and a small head
+    - Which state were Coolidge born in
+    - Is there a definite article in Turkish language
+    - Why do honey bee queens continue to lay eggs during the foraging season
+    - Which day is observed as World Environment Day
+    - Are foxes wary of humans
+    - What happened in 1968 through 1971
+    - How long is the elephants gestation period
+    - Is the museum collection also the national art collection of Liechtenstein
+    - Did the team  sedating Cleveland with nitrous oxide LRB laughing gas RRB  not remove his upper left jaw and portions of his hard palate
+    - How is the citys governor chosen
+    - What position is used to play the cello
+    - What is one of the challenges of reestablishing a population of Eurasian otters in the UK
+    - What established a trading post on the island in 1819
+    - What principles did Newton explain for mechanics
+    - How do kwajalein and eniwetok relate
+    - Is the smallest penguin species the Little Blue Penguin LRB also known as the Fairy Penguin RRB  which stands around 40 cm tall LRB 16 in RRB and weighs 1 kg LRB 22 lb RRB
+    - Is singapore the 17th wealthiest country in the world in terms of gdp per capita
+    - How old was CharlesAugustin de Coulomb when he died
+    - Do swans belong to the family Anatidae
+    - What happened in a region not quite 2000 km south of the equator 35 mya
+    - Does a classical lyre have a hollow body
+    - Wasnt Blaise Pascal a work of Desargues on conic sections
+    - Did Canadian soldiers win the Battle of Vimy Ridge in 1917
+    - What was Anders Celsiuss profession
+    - Was there a cholera outbreak in 1832
+    - How much increase in the medias contribution to GDP is the government seeking
+    - Which Russian army general conquered Finland in 1809
+    - Name four related articles for the article on turtles
+    - What is now part of Adams National Historical Park
+    - What two instruments form the modern drum kit
+    - What kind of piano did Irving Berlin play
+    - Where was James Monroe shot
+    - Who was a member of the Sandemanian sect of Christianity
+    - Is the electric eel a true eel
+    - Is each node at an integer division of the string
+    - Is Uruguay very common
+    - Is german written using the Latin  alphabet
+    - Has swahili no diphthongs
+    - Who first calculated the value of Avogadros number
+    - In what country did fox hunting originate
+    - How many years ago was it when he became the third in his family to occupy the physics chair at the Musum National dHistoire Naturelle
+    - In what year did Germany seize Tanganyika
+    - What are the smallest trumpets referred to as
+    - What is the life expectancy for men
+    - Does the giant otter inhabit South Africa
+    - Was Old Chinese wholly uninflected
+    - Did Faraday discover the chemical substance benzene
+    - What is Finlands economy like
+    - Does the giant otter live in South America
+    - Was Fillmore the second Chancellor a position he maintained while both Vice President and President
+    - What did Faraday invent that is used almost universally in science laboratories
+    - The bears sometimes what
+    - Does the koala fill the same ecological role as the sloth of South America
+    - Who was Faradays wife
+    - What is the Faraday effect
+    - Was Newton admitted into Havard College
+    - Is Swahili spoken in Mozambique
+    - Are all dialects of Korean similar to each other
+    - What was one of the many species described in Linnaeuss 18thcentury work Systema Naturae
+    - Did the Moche people worship lobsters
+    - Is it true that he became a professor in 1820
+    - Is santiago Spanish for St James   from santo   saint    iago   James
+    - How many sides are there in a triangle
+    - What period of rapid economic growth did the United States experience during Coolidges presidency
+    - Which is the principal source of energy for earth
+    - What are the similarities between beetles and grasshoppers
+    - Around how many recognized octopus species are there
+    - does the charge reside on the interior of a charged conductor
+    - What do fossil and DNA evidence tell us
+    - Who was John Monroe standing behind in the painting of  Washington Crossing the Delaware
+    - Is the leopard LRB panthera pardus RRB an old world mammal of the felidae family and the smallest of the four   big cats   of the genus panthera  along with the tiger  lion  and jaguar
+    - What happened in 1867
+    - Are calligraphers held in great esteem
+    - Was Isaac Newton religious
+    - Is The GDP  per capita in Lima  7600    ref
+    - What lived in Columbia
+    - Does Coulomb leave a legacy
+    - What is an otters den called
+    - What are the names of the two zoos in Berlin
+    - When did Ghana achieve independence from the United Kingdom
+    - What is the SI unit for radioactivity called
+    - The Spanish Crown named Pizarro governor of what
+    - Does Lima have volleyball venues
+    - What is the national language in Malaysia
+    - Was his father member of the Sandemanian sect
+    - Are the largest turtles aquatic
+    - What is the name of the biggest rain forest in the world
+    - Is the leopard an agile and graceful predator
+    - How many days do we have in a week
+    - Which is the busiest airport in Berlin
+    - Was Abraham Lincoln the sixteenth President of the United States
+    - Was Gerald Ford a member of Delta Kappa Epsilon
+    - What is the punishment for firstdegree murder
+    - How many years ago was the Lima Stock Exchange the most profitable in the world
+    - What kinds of musical groups use cymbals
+    - What was from Pennsylvania
+    - Did John Adams support the Stamp Act of 1765
+    - Founded by Tsar Peter I of Russia on 27 May 1703 was it the capital of the Russian Empire for more than two hundred years 1713  1728 1732  1918
+    - Were the Leopard men a West African secret society who practised cannibalism
+    - Is it derived from the Latin spoken by the romanized preRoman peoples of the Iberian Peninsula namely the Gallaeci the Lusitanians the Celtici and the Conii around 2000 years ago
+    - Was Alessandro Volta born in Como
+    - How does a trumpet produce sound
+    - Four years after opening his shop  Watt began what
+    - Older English sources used the name Korean to refer to what
+    - Wasnt Leonardo da Vinci born on April 15
+    - What types of fins do eels have
+    - Was Lombardy under Napoleons rule in 1800
+    - Is Berlin the headquarters of Springer
+    - Does Vietnamese have a large number of vowels
+    - When did Rockwell marry his first wife Irene OConnor
+    - Did Free Jazz feature a Pollock painting as its cover artwork
+    - What are poor neighborhoods called informally
+    - Does the World Conservation Union consider the cougar a least concern species
+    - Give an example of the ten Beta World Cities
+    - How much do sea otters weigh
+    - Is Liechtenstein the smallest Germanspeaking country in the world
+    - What is the name of young swans
+    - About how many square kilometers would be needed to house 3 female tigers
+    - How many years after Cleveland left office did the US win the SpanishAmerican War
+    - When did Watt retire
+    - What does the air stream across this hole create
+    - Was Monroe appointed Minister to France from 1794 to 1796
+    - What are turtle eggs covered in when they incubate
+    - What is the definition of the electrostatic force of attraction and repulsion
+    - Was his 1800  paper written in French
+    - Is San Franscico a popular tourist destination
+    - Which property did James Monroe sell in 1817
+    - Is the National Palace Museum in Taipei
+    - Is the Giant Panda an endangered species
+    - Who did Alessandro Volta marry
+    - Can citizens propose changes to the Constitution
+    - Is the ant a marsupial
+    - Are they easily identified by their elbowed antennae and a distinctive nodelike structure that forms a slender waist
+    - Was Alessandro Volta an Egyptian
+    - How many species of otter are there
+    - Are penguins astonishingly agile
+    - Is the battente smaller than a classical guitar
+    - Is it true that otters eat a variety of fish
+    - Which is the continent with the most number of countries
+    - Why is Vattenfall shifting towards reliance on cleaner renewable energy sources
+    - Is Vietnamese the mother tongue of the Vietnamese people
+    - Was Ford interred at his Presidential Museum in Grand Rapids Michigan
+    - Do butterflies make sounds
+    - Did Uganda make Swahili a required subject in primary schools
+    - What is the largest living species of penguin
+    - Are trumpets constructed of brass
+    - Why do kangaroos have a wide bite
+    - What are some common predators of ducks
+    - Wasnt Alessandro Volta born in Como
+    - Was Thedore Roosevelt  a member of the Republican Party
+    - What important electrical unit was named in honor of Volta
+    - Crowds of believers came to see and kiss the thorn all of Catholic where acclaimed a miracle
+    - When was the Principia published
+    - Are tigers solitary animals
+    - How do rock and roll drummers like their drumheads
+    - Are violinists and fiddlers the same thing
+    - Does Uruguay border French Guiana
+    - Whom did he share the Nobel Prize with
+    - What is the name of the Greek God of music
+    - When was the pan flute used in Greece
+    - What is a person who plays the cello called
+    - When did Filippo Strozzi sell it to Francis I
+    - When was the Six Day War
+    - Are there several types of trumpet
+    - Did Pascal write about cycloid before 1658
+    - Did he become chief engineer in the Department of Bridges and Highways in 1892
+    - What happened in 1887
+    - When did ProtoUralic language arrive in Finland
+    - Is it true that each penguin gets a turn in the center
+    - Did he not cast his ballot for John M Palmer  the presidential candidate of the National Democratic Party  or Gold Democrats  a shortlived party that supported a gold standard  low tariffs  and limited government
+    - An otter s den is what
+    - What are the names of Uruguays political parties
+    - did he advise the british government on the production of chemical weapons for use in the crimean war
+    - How many years ago was it when he discovered that the optical properties of gold colloids differed from those of the corresponding bulk metal
+    - What does the voice of a violin depend upon
+    - Are pocket trumpets compact B trumpets
+    - How many raised arms are extending from the soundchest of a classical lyre
+    - Is there a Becquerel crater on the Moon for radioactivity
+    - Is the leopard one of the four big cats
+    - How did vespoid wasps evolve
+    - Is it true that romania has a population of 21698181
+    - Do otters have claws
+    - Was Grover Cleveland elected Sheriff of Erie County New York
+    - He founded the private university of buffalo on what date
+    - Where is Wilson buried
+    - When was Lima founded
+    - Is Jakarta the countrys economic cultural and political center
+    - What does Era of Good Feelings refers to
+    - Are the strings of a classical lyre made of gut
+    - Is Vietnam independent from France
+    - What have clash cymbals traditionally been accompanied by
+    - Does the United States have a base near Glasgow
+    - What type of bird lays the largest eggs
+    - How many occupation zones was Germany divided into after the war
+    - How much of the population is of white European descent
+    - Is Antwerp in Belgium
+    - Do ducks forage underwater
+    - Are there a large number of Jews living in Egypt today
+    - What were the strings of a classical lyre made of
+    - Is the Tiger a member of the Felidar family
+    - What is named after him
+    - What would a German call Avogadros number
+    - Is it possible to open flutes at one or both ends
+    - What is one significant nonofficial language
+    - What year did Coolidge open his own law office
+    - What enjoys one of the worlds highest standards of living
+    - Is Voltas legacy celebrated by a Temple on the shore of Lake Como in the center of the town
+    - What is the basic word order in Malay
+    - Who began control of migration to the city in order to stem the overcrowding and poverty
+    - Has the design of drums changed recently
+    - Are there also large populations of German ancestry In Mexico
+    - How many parts of speech are there in Malay
+    - What happened in the January 15 1882
+    - What method of locomotion do Kangaroos Use
+    - Are cymbals used in moden orchestras
+    - These projections  called papillae  have what
+    - Why did Avogadro lose his chair at the University of Turin
+    - How many legs do lobsters have
+    - Whom are guitars made and repaired by
+    - Who died in childbirth in 1772
+    - Where did he serve two terms
+    - Was Leonardo a contemporary of Botticelli Domenico Ghirlandaio as well as Perugino
+    - What was more damaging than moving students into colleges
+    - Who wrote about ants in A Tramp Abroad
+    - When did a standard and common language become available to all Swedes
+    - Are all penguins countershaded
+    - What did James Monroe do before being elected governor
+    - Is Jakarta a city
+    - What religions has Egypt outlawed
+    - Are many beetles territorial
+    - Why wasnt Romania neutral during World War II
+    - Is the city named after the apostle Saint Peter
+    - How old was Henri Becquerel when he died
+    - Is Crissy field an airfield
+    - Which African nation is famous for chocolate
+    - When did Yuan Shikai die
+    - When did he vote for democrat james buchanan
+    - How many municipalities does Antwerp have
+    - Why are upright pianos more compact
+    - Is english an intonation  language
+    - Is the Red River Delta traditionally poor
+    - Where is Arabic spoken
+    - How did early naturalists distinguish between leopards and panthers
+    - When was he elected sheriff of Erire County New York
+    - Are there 622650 speakers of German In Canada
+    - How large is the population of San Francisco
+    - Where did a suicidebombing kill a teacher in 2005
+    - Give an example of the largest twoyear community colleges in the country
+    - Are famous middle  schools  in Beijing
+    - In addition to Port Royal where else did Samuel de Champlain establish a settlement
+    - What is the poulation of Egypt
+    - Is it also one of the two official languages in the Yanbian Korean Autonomous Prefecture in China
+    - Can the origins of cymbals be traced to prehistoric times
+    - What countries did James VI of Scotland unite
+    - What is the largest city in Romania
+    - Was his father inspector of the Royal Fields
+    - Was Grants fatherinlaw a Democrat
+    - Which animal is known as the  Ship of the Desert
+    - Is the xylophone a musical instrument
+    - Are many words describing the navy  types of ships  and other objects or activities on the water of dutch origin
+    - Did Isaac Newton die in 1898
+    - Over how many languages are spoken in London
+    - Is there a monument to Tesla at Niagara Falls New York
+    - What did the University of Oxford grant Faraday
+    - For how many years of James Watts life was his mother alive
+    - Where are the Western Arabic numerals used
+    - Is polar bear a mammal
+    - Can beetles be found in polar regions
+    - What do beetles eat
+    - Is Liechtenstein doubly landlocked
+    - How old is the oldest known representation of a guitarlike intrument being played
+    - Are kangaroos and wallabies adept swimmers
+    - When did the first educational works appear for the cello
+    - How many living species of Asian Elephants are there
+    - Did Faraday marry Sarah Barnard
+    - Which countries established colonies in Canada
+    - How did the supporters of Henry Clay feel about Fillmore in 1848
+    - Did he experiment with individual cells
+    - What are the reasons for hunting wild ducks
+    - Did Coolidge graduate from Black River Academy
+    - Today are there more cell phone subscriptions than people in Finland
+    - When did Nikola Tesla appear on the cover of Time Magazine
+    - Is the leopard of the Felidae family
+    - Here  are all syllables unstressed  except the syllableswords best and done  which are stressed
+    - Was the SI unit of charge named after CharlesAugustin de Coulomb
+    - What is the battery made by Alessandro Volta credited as
+    - What body of water lies to the south of Finland
+    - Is it the world s fourth most populous country and the most populous muslimmajority nation
+    - How is the pronunciation of foreign words determined
+    - What is an economic use of a duck
+    - Did Alessandro Volta die and retire in the same place
+    - What is the origin of the name Santiago
+    - Was Michael Faraday an English chemist
+    - What are characteristic features of Finnish
+    - The Savings and Loans Bank was founded as was the first cottonweaving mill in what year
+    - Are lobsters kosher
+    - What is the last word on the page
+    - Why did Coolidge not attend law school
+    - Which Berlin building did architect Norman Foster remodel in the 1990s
+    - Where is the most densely populated part of Canada
+    - Does Qatar rank as the eighth richest country in the world per capita
+    - Can a flute be played with several different air sources
+    - is the central market located in the proximity of the pertama complex
+    - Was it derived from Latin
+    - Why did German troops occupy Copenhagen
+    - What traps a layer of air and keeps them dry and warm under water
+    - Was Blaise Pascal a mathematician of the first order
+    - Does otter give birth or lay egg
+    - What is the difference between leopards and cheetahs
+    - How many total keys does a typical modern piano have
+    - What are violins made of
+    - When did James Monroe graduate from William and Mary
+    - Is it the smallest germanspeaking country in the world
+    - What type of creatures breathe air and dont lay eggs underwater
+    - Which country is home to the kangaro
+    - Was Mission Bay campus opened in 2003
+    - Is Romania a secular state
+    - Is diglossia a common feature in mainland China and Taiwan
+    - Do linguists often view Chinese as a language family
+    - Do drums consist of at least one membrane called a drumhead or drum skin that is stretched over a shell and struck either directly with parts of a players body or with some sort of implement such as a drumstick to produce sound
+    - Was Henri Becquerel one of the discoverers of radioactivity
+    - Are the caves of Dragon Bone Hill near the village of Zhoukoudian in Fangshan District
+    - On average are cougar males heavier than females
+    - Are the several dialects of Kagoshima famous to speakers
+    - What is the bridge used for
+    - Does the economy not depend heavily on exports refining imported goods  especially in manufacturing
+    - Is it true that france signed the European Charter for Regional Languages
+    - Do the ants eat plants meats or both
+    - Do kangaroos have many natural predators
+    - Does ketchup come from the Minnan pronunciation of 3985327713 koetsiap
+    - Are turtles pets
+    - How does Swedish language counterbalance the absence of cases
+    - Is Dhaka the capital of Bangladesh
+    - Which is the largest ocean in the world
+    - Has Leichtenstein worked to promote the countys image by prosecuting international moneylaundering
+    - How many primary colors are there
+    - Was Paul Jackson Pollock an influential American painter as well as a major figure in the abstract expressionist movement
+    - Is it possible to alter the word order to stress the importance of a certain phrase
+    - Did Wilson not spend 1914 through the beginning of 1917 trying to keep America out of the war in Europe
+    - How do qatar and the wider region relate
+    - Which ballet by Pyotr Tchaikovsky is partially based on an Ancient German legend about a princess who was turned into a swan
+    - Is a drake a male
+    - When did the Soviet military forces occupy Estonia
+    - Where is harvesting wild turtles legal
+    - What is Coulombs law
+    - did faraday have strong maritime interests
+    - When were the Great Sphinx and the Pyramids of Giza built
+    - Do most Japanese people employ politeness
+    - Is the mechanism in an upright piano perpendicular to its keys
+    - Do another distinguishing feature of Malay  include Indonesian Malay
+    - How long have people been making instruments like violins
+    - Where does the word violin come from
+    - Did he publish his work
+    - How many species of penguins are there
+    - When was Liechtensteins current constitution adopted
+    - Is it true that coulomb leaves a legacy as a hero
+    - Do the different species of zebras interbreed
+    - When were his papers donated by Lee Krasner
+    - Are wild kangaroos shot for meat
+    - What is someone who makes violins called
+    - Is Melbourne the capital and most populous city in the state of Victoria
+    - Was Vietnamese formally written using the Chinese writing system
+    - How has Canada helped UN peacekeeping efforts
+    - Is it true that he published his invention of the Voltaic pile battery
+    - Is Uruguay located in the northwesten part of Africa
+    - Was James Cook the first to record the name Kangooroo
+    - Do nearly all Qataris profess Islam
+    - Have Kangaroos dazzled by headlights or startled by engine noise been known to leap in front of cars
+    - Was Nikola Tesla a vegetarian
+    - Did he become professor of experimental physics at the University of Pavia
+    - How much do elephants weight at birth
+    - Did Pascal also write in defense of the scientific method
+    - Was Adams raised Congregationalist
+    - What was Ottawas name in 1850
+    - Are the Javanese the largest and politically dominant ethnic group in Indonesia
+    - Like many larger where cities San Francisco is a minoritymajority city as nonHispanic whites comprise less than half of the population
+    - Where was Theodore Roosevelt born
+    - How long was Kuala Lumpur occupied by the Japanese
+    - Did the media contribute 156 to Singapores GDP in 2001
+    - Had his thermometer 100 for the freezing point of water and 0 for the boiling point
+    - Where is the violincello held
+    - What happened in the election of 1816
+    - Was Ford the last surviving member of the Warren Commission
+    - What is Henri Becquerel
+    - Interaction with what man stirred up Newtons interest in alchemy
+    - What field did Woodrow Wilson leave law practice to study
+    - What happened on plants and fungi
+    - Does Ottawa sit on the Ottowa River
+    - What happened in 1860
+    - Is it possible that there are more than 350000 species of beetles
+    - What are young swans known as
+    - Which is the instrument used to measure Blood pressure
+    - Did Lincoln start his political career in 1832
+    - To what genus does the gray wolf belong
+    - Is Egypt the most populated country in Africa
+    - As a celebrator of beauty and especially feminine sensuality has it been said that Renoir is the final representative of a tradition which runs directly from Rubens to Watteau
+    - Who was the eldest sibling
+    - What happens when the center of a Cymbal is hit
+    - What is the color of the Australian Black Swan
+    - Did he receive the Societys 1794 Copley Medal
+    - How old was Anders Celsius when he died
+    - What was Michael Faradays birthplace
+    - Is a leopard larger and less lanky than a cheetah
+    - What has the most effect on how a drum sounds
+    - Are turtles a part of the Flying Spaghetti Monster
+    - How are otters playful animals
+    - What does a citizen use to propose changes to the Constitution
+    - When was Woodrow Wilson born
+    - What did Jefferson call John Adams
+    - Was Grant s favorite brand of bourbon whiskey Old Crow
+    - How old was Celsius when he died
+    - Have other techniques been used to cause drums to make sound such as the Thumb roll
+    - Was celsius born in Uppsala  in Sweden
+    - Is the violin cello a bowed string instrument
+    - What is Amedeo Avogadros first name
+    - Does an ants head contain sensory organs
+    - Why is there purling on a cello
+    - By what name are drums classified as under the percussion group
+    - In which place is lyre still played
+    - Whare is the name for drums that have a set of wires held across some of all of the drum heads
+    - What would a tiger do when seized by a crocodile
+    - What do river otters eat
+    - Are male females generally taller than female giraffes
+    - Aside from the Provincial Letters religious influence were they popular as a literary work
+    - Was Kee seven years older than Van Gogh as well as had an eightyearold son
+    - How many days did it take the Imperial Japanese Army to win the Battle of Singapore
+    - What happened in the early 20th century
+    - How many municipalities is Liechtenstein divided into
+    - Is today he widely regarded as one of historys greatest painters and an important contributor to the foundations of modern art
+    - Were the treaties signed in 1947 and 1948 with the Ukraine
+    - Is the current estimated population of Nairobi about 6 milion
+    - Are certain species of beetles considered pests
+    - How old was Lincoln in 1816
+    - Have many European languages borrowed numerous words from it
+    - Is the myth of Otter s Ransom the starting point of the Volsunga saga
+    - How many bones does an adult human have
+    - What resembles that of the similarlysized cougar in the Americas
+    - Of what state was Coolidge governor
+    - How do giraffes defend themselves
+    - What kinds of coats do wolves have
+    - Would a tiger be likely to feedon smaller animals such as mice
+    - What is the difference between Celsius original temperature scale and the one we use today
+    - Was the leopard tank a German designed tank which entered service in 1965
+    - Does salmon remain the favorite of fly rod enthusiasts
+    - Was the Bucharest Metro only opened in 1979
+    - Did Coolidge get in Amherst College
+    - Do they prefer forested areas
+    - Where was Celsius born
+    - What kinds of changes have larger kangaroos adapted much better to
+    - Did Mitchell Taylor  the Nunavut Government Manager of Wildlife Research  not write a letter to the US Fish and Wildlife Service arguing that local studies are insufficient evidence for global protection at this time
+    - Was Ford a member of the House of Representatives
+    - What does a polar bears fur provide
+    - Who or what vary greatly in form within the coleoptera
+    - What is the current estimated population of Nairobi
+    - What is an example of something an octopus learned in a research experiment
+    - Is San Francisco also the financial cultural and transportation center of the larger San Francisco Bay Area a region of 74 million people
+    - Is the koala found in coastal regions of eastern and southern Australia from near Adelaide to the southern part of Cape York Peninsula
+    - Was coulomb born in Angoulme  France   to a well  to do  family
+    - Did Alessandro Volta live to be 80 years old
+    - Where is San Francisco
+    - Was Woodrow Wilson the thirtieth President of the United States
+    - What insulate it against the cold
+    - Are a wolfs teeth its main weapons
+    - Who helped to fund Roosevelts African safari
+    - What are the oldest known musical instruments
+    - Is the stressed  syllable called the nuclear  syllable
+    - What areas can giraffes inhabit
+    - Where is the James Watt Memorial College
+    - What order do penguins belong to
+    - In 1905 Coolidge met and married whom
+    - By 2050 what will the total population of Portuguese speakers in the world be
+    - Give an example of the most prominent cities in Africa politically and financially
+    - Did Faraday lecture on education in 1854
+    - What prompted the city to upgrade its building codes
+    - What did Aristotle say about elephants
+    - How is the climate in the city
+    - Are the dialects of Finnish divided into two groups
+    - Where is Adams buried
+    - Was Amedeo Avogadro was born in Turin
+    - What is the smallest species of fox
+    - Is the SI unit for radioactivity named after him
+    - How many years ago was it when he discovered the phenomenon that he named diamagnetism  and what is now called the Faraday effect
+    - What languages did Tesla speak
+    - Which county was Lincoln born in
+    - Are more residents employed by small businesses than in 1977
+    - Is the Wisma building the tallest building in Indonesia
+    - Were the citys other names Petrograd  1914  1924 and Leningrad  1924  1991
+    - What religion did Isaac Newton follow
+    - When was the first photgraph of lincoln taken
+    - What includes a lengthy justification of why this species is listed as vulnerable
+    - Was John Calvin Coolidge Jr was born in Las Vegas
+    - Is faraday best known for his work with kinematics
+    - Which species of zebra is known as the common zebra
+    - Which is the tallest animal on the earth
+    - Give an example of the largest stadiums anywhere in the world and the home to FC Zenit St Petersburg in 19501993 and 1995
+    - Where was Grant born
+    - Which is the longest written Constitution in the world
+    - Do populations also extend for considerable distances inland in regions with enough moisture to support suitable woodlands
+    - Which is the most widely spoken language in the world
+    - How many species of beetles are there
+    - What have become flippers useless for flight in the air
+    - What do with greenpeace and the natural resources defense council have in common
+    - What contributes to frequent flooding in Jakarta
+    - How many bones does a shark have
+    - What is the official religion in the country
+    - Will oil and gas probably remain the backbone of Qatar s economy for some time to come
+    - Where are bullet ants located
+    - What is the most basic form of the flute
+    - How do trumpets compensate for wolf tones
+    - What European countries established states in Ghana
+    - Who was the general in charge at the Battle of Antietam
+    - Why are otters vulnerable to prey depletion
+    - What animal attracts the most humor and silliness
+    - Onefifth of world population speak some form of what
+    - Did Coulomb die in Angoulme France to a welltodo family
+    - For how many years did CharlesAugustin de Coulomb live
+    - What do economy and law have in common
+    - Have managed populations of European honey bees experienced substantial declines
+    - Did Lincoln win the election of 1860
+    - Which is the smallest bone in the human body
+    - Is The climate in Uruguay temperate
+    - What are four species that are commonly referred to as kangaroos
+    - Did Webster write I can now sleep of nights
+    - Have thumbpolar bears been made both controversial and famous for their distinctive white fur and their habitat
+    - Where was Grover Cleveland married
+    - What are approximately 42000 years old and have been nicknamed John of Anina
+    - What is the SinoKorean system of numbers based on
+    - Is it true that he married louise dsire lorieux in 189
+    - What is an effective way to accentuate a note
+    - Is one of the parts of a cymbal called a disc
+    - What is the average life expectancy of a kangaroo
+    - Is it a winter sports resort
+    - Was Ford an Eagle Scout
+    - Why does the cornet have a slightly mellower tone than the trumpet
+    - Are Male otters dogotters  females are bitches and babies are cubs or pups
+    - When was CharlesAugustin de Coulomb permanently stationed in Paris
+    - Who also discovered that less than three percent of kangaroos exposed to the virus developed blindness
+    - Is a kangaroo a marsupial from the family macropodidae LRB macropods  meaning   large foot   RRB
+    - The John Adams Library  housed at the Boston Public Library  contains what
+    - Is it true that indonesia has vast areas of wilderness
+    - Institution formed the foundation of what
+    - Does the state court rule on the conformity of laws
+    - What is the primary item in an otters diet
+    - Is it not even known whether the gigantic palaeeudyptines constitute a monophyletic lineage  or whether gigantism was evolved independently in a much restricted Palaeeudyptinae and the Anthropornithinae
+    - Is a string first tuned to a standard pitch
+    - Where is Michael Faraday buried
+    - Did Wilson support desegregation
+    - Is Avogadros number used to compute the results of chemical reactions
+    - Were ancient mallets made of copper
+    - When was Volta made a count by Napoleon
+    - How much area does Dhaka cover
+    - When did Lincoln first serve as President
+    - Which came first the xylophone or the vibraphone
+    - Who laid down the Peter and Paul Fortress
+    - Who served as the headquarters and one of the main launching sites of the US invasion of Iraq in 2003
+    - How long has the basic design of the drum remained unchanged
+    - Regarding this topic what did David Alfaro Siqueiros do
+    - Is Ford one of only four former Presidents to live to 90 or more years of age
+    - Is it the world s largest archipelagic state
+    - Are most eels predators
+    - Who appointed Harlan Fiske Stone to the Supreme Court
+    - Did Lincoln sign the National Banking Act of 1863
+    - Are harvesting wild turtles legal anywhere
+    - How many provinces and territories does Canada have
+    - How many people speak the Arabic language
+    - Are the zholes used as access points to the interior of the cello
+    - What caused Wilson to ask Congress to declare war on the Central Powers
+    - Who got Seward elected to the senate
+    - Are ducks an accepted presence in some populated areas
+    - Where did Nikola Tesla move to in 1880
+    - Why does most of Egypts population live near the Nile
+    - Did James Monroe fight in the Continental Army
+    - How many counties is Romania divided into
+    - Did Roosevelt support racial integration in schools
+    - What have been inhabited for millennia by aboriginal peoples
+    - Was Ford active about Vietnamese affairs
+    - How much time to penguins spend on land
+    - In Switzerland is  used at all
+    - When did he publish a collection
+    - Did ford get an award called Congressmans congressman
+    - How many years ago did Faraday report on the first synthesis of compound make from carbon and chlorine  c 2 h 6 and c 2 h 4
+    - Does a polar bear live in the Arctic
+    - Did Monroe wedding happen at the Trinity Church in New York
+    - May a single female lay from several dozen to several thousand eggs during her lifetime
+    - Who graduated in ecclesiastical law at the early age of 20 and began to practice
+    - When did he marry louise dsire lorieu
+    - Why do penguins tobaggan
+    - Are termites actually more closely related to cockroaches as well as mantids
+    - Has the New Zealand Rugby League featured the Otahuhu Leopards and then the Tamaki Leopards
+    - Whad did Celsius report in his paper Observations of two persistent degrees on a thermometer
+    - What land animal has the largest brain
+    - Is Ottawa on a river
+    - What expression is part of a conceptual framework for testing computer systems
+    - What sport are you not allowed to use your hands in
+    - Where is Qatars telecommunication system centered
+    - In what year did East Timor secede from Indonesia
+    - What is the second biggest factor affecting the sound produced by a drum
+    - Is Malay the one of the most widely spoken languages in the world
+    - What trumpet was the first to be allowed in the Christian Church
+    - What does the name Kuala Lumpur mean
+    - What is Monroes daughters name
+    - Was Isaac Newton British
+    - Was the game of Marn grook played using a ball made from kangaroo by the Kurnai people
+    - Can these allophones not occur in these positions in english
+    - Had the language already been used as the lingua franca throughout the archipelago since the 15th century
+    - Avogadro did not actually use what word
+    - What butterfly is migratory
+    - Who did James Monroe live with in New York City
+    - What are the two main groups of Portuguese dialects
+    - Was Grover Cleveland married in the whitehouse
+    - What universities are in Education City
+    - Was Pascals earliest work in the natural and applied sciences where he made important contributions to the construction of mechanical calculators the study of fluids and clarified the concepts of pressure and vacuum by generalizing the work of Evangelista Torricelli
+    - What was the largest ever chelonian
+    - What are the most significant foreign contributors to Turkish vocabulary
+    - Was Coulomb born in Angoulme France to a well to do family
+    - How long after the death of his first wife did Fillmore marry Caroline McIntosh
+    - How old was Pascal when he lost his mother
+    - Which place is known as the roof of the world
+    - What areas do the Grevys Zebras inhabit
+    - What did Pascal argue was as perfect as possible
+    - Did Alessandro Volta invent the remotely operated pistol
+    - Is the black color heritable and caused by only one recessive gene locus
+    - What type of tools do biologists use to capture wolves for tagging
+    - Which government established Portuguese as its third official language in order to meet the requirements to apply for full membership in the CPLP
+    - Can women legally drive in Qatar
+    - Is the standard of living in San Franciscio high
+    - Was faraday s  earliest  chemical  work as an assistant  to Davy
+    - Based on the average in what year will the next small tremor occur in Ottawa
+    - What is the largest joint in the human body
+    - Was Volta made a count in 1810
+    - Was the pan flute used in Greece
+    - Are The modern Chinese dialects more like a family
+    - Is a polar bear at high risk of extinction
+    - was he active in the area now called environmental science
+    - Is it a disadvantage for something to be unsafe to handle
+    - Did Tesla win the Nobel Prize
+    - Are swan birds of the family Anatidae
+    - What do most recognizable international company and largest employer have in common
+    - Where is the bust of Queen Nefertiti
+    - What did James Monroes letters not contain
+    - The largest Democracy in the world
+    - Approximately how many species of Testudines are alive today
+    - Was Calvin Coolidge a governor of Massachusetts
+    - Is Indonesia a monarchy with a presidential system
+    - Was Wilson president of the American Political Science Association in 1910
+    - Are drums usually played by the hands
+    - Was Cleveland s portrait on the US  1000 bill from 1928 to 1946
+    - Do carrion beetles eat dung
+    - Did Albert Einstein keep a photograph of Faraday on his study wall
+    - Is Vietnamese the official administrative language of Vietnam
+    - What is the mean level of mercury in American lobsters
+    - What does Henri Becquerel do
+    - What are the differences between English and Swedish pronouns
+    - Are turtle eggs leathery and soft
+    - Where do the majority of loanwords other than SinoKorean come from
+    - Are panthers a type of tiger
+    - Hence can relative molecular  masses be calculated from the masses  of gas samples
+    - Is Indonesia a republic
+    - What is a violin called informally
+    - Is Nassau Sound a body of water in Maine
+    - Are among his most famous works the protoCubist Les Demoiselles dAvignon 1907 and Guernica 1937 his portrayal of the German bombing of Guernica during the Spanish Civil War
+    - How did civil wars affect England during the Middle Ages
+    - Have elephants been used as working animals
+    - Who is the first woman to go to space
+    - Why are penguins countershaded
+    - How do elephants communicate over long distances
+    - How many strings does a violin have
+    - What information did he record in his diary
+    - Did he suffer from anxiety and increasingly frequent bouts of mental illness throughout his life and died largely unknown at the age of 37 from a selfinflicted gunshot wound
+    - What is a resident of Melbourne known as
+    - Did the scientific community not reserve great attention to his theory
+    - When was CharlesAugustin de Coulomb born
+    - Can otters survive in cold water
+    - Are cellos constructed with glue
+    - Has it been created with a long term perspective to support the development of Qatar and the wider region  develop local and regional markets  and strengthen the links between the energy based economies and global financial markets
+    - Which continent is known as Dark continent
+    - Where does the word otter derive from
+    - Who asked a nearby local what the creatures were called
+    - Was Pascal a French mathematician
+    - Are leopards circular
+    - Wasnt Portuguese language spread by arriving Roman soldiers
+    - Do giant pandas attack humans
+    - When did CharlesAugustin de Coulomb join his fathers family in Montpeillier
+    - Are bees related to ants
+    - Which is the most sensitive organ in our body
+    - Where was the deepest note of the classical lyre in relation to the players body
+    - Who died the next morning
+    - Did he die at 1110 pm on March 8 1874 of the aftereffects of a stroke
+    - Are drums often used in music therapy
+    - What is the boiling point of water dependent on
+    - How many times has Uruguay won the World Cup
+    - How many square kilometres of continental land is Uruguay
+    - Who was defeated for reelection in the Revolution of 1800 by Thomas Jefferson
+    - Does a  tz indicate that the preceding vowel is short
+    - Is Qatar bordered by Saudi Arabia to the south
+    - How many species of zebra are there
+    - Is it true that Volta married the daughter of Count Ludovico Peregrini
+    - Is Arabic a Central Semitic language
+    - Was the Italian 10000 lira banknote created before the euro
+    - Can a panther be any of several species of large felid
+    - Is Modern Korean written with spaces between words
+    - Had he smoked only sporadically
+    - What are some of the cougars primary food sources
+    - Was Wilson  a staunch opponent of antisemitism  sympathetic to the plight of Jews  especially in Poland and in France
+    - What are the most common Cymbals
+    - What is the battery made by Volta credited to be
+    - The number of elementary entities in 1 mole of a substance is known as what
+    - How many letters are in the basic Latin alphabet
+    - Who were the Orkhon inscriptions built for
+    - What family is the panda a part of
+    - Was Becquerel elected Permanent Secretary of the Acadmie des Sciences
+    - Who was the first man to walk on the moon
+    - Is Malay an agglutinative language
+    - How much of Earths surface is covered by ocean
+    - Do penguins live almost exclusively in the Southern Hemisphere
+    - What do people commonly call cleptoparasitic bees
+    - What are the two materials that bows are made of traditionally
+    - Was Adams an opponent of the Stamp Act
+    - Did the Department of the Interior not charge that the rights of way for this land must be returned to the public because the railroads failed to extend their lines according to agreements
+    - Where are there craters named Becquerel
+    - When was Coolidge born
+    - Is modern Korean written in columns or rows
+    - Were the recitations of the Ancient Greeks accompanied by lyre playing
+    - Is Melbourne home to Australias busiest seaport
+    - Where do sea otters live
+    - For how many years did Henri Becquerel live
+    - What is Avogadro most noted for
+    - Where is the National Orchid Garden
+    - Are pianos used in Western music
+    - Is the violin shaped like an hourglass
+    - What method is used by Kangaroos to travel
+    - Are ants used in cuisine
+    - What are the two subfamilies of the Native Ghanaian languages
+    - Is Kuala Lumpur in the Selangor state
+    - How many noun classes does Swahili have
+    - Do wolves leave their pack
+    - How long do most foxes live
+    - Was King Victor  Emmanuel  III there to pay  homage  to Avogadro
+    - Is Avogadro s number commonly used to compute the results of chemical reactions
+    - Was Tesla regarded as a mad scientist
+    - Where did the construction of Fort Bourbon take place
+    - Is Canada bilingual
+    - In what year were the Games of the XV Olympiad held
+    - Was Anders Celsius the first  to perform  and  publish  careful experiments  aiming at the definition  of an international  temperature  scale  on scientific grounds
+    - How does a Mallards tongue work
+    - When are sperm cells transferred to the female
+    - What was given by Aristotle for the hardened shield like forewings
+    - Is Singapore located at the southern tip of the Korean Penisula
+    - What happened in 1980s
+    - Is Uruguay located in South America
+    - What makes up  approx 80 percent of our brains volume
+    - who was his mentor
+    - How do cuba and declining participation relate
+    - Is indonesia a republic
+    - Was Malay language written using Pallava
+    - Who frequented the circle of the BritishAustralian artist John Peter Russell
+    - What percentage of Liechtensteins population is foreignborn
+    - Adams  opponents were what
+    - What sort of turtles are ectothermic
+    - Do foxes damage fruit on farms
+    - What is the largest mountain in the worl
+    - Is the most important river the Ciliwung River
+    - What did Ford receive on April 13 1942
+    - Was Wilson awarded the 1919 Nobel Peace Prize
+    - Who did Cleveland run against in 1884
+    - Is The Celsius  crater  on the Moon named after him
+    - Is it true that he published a collection in 1738
+    - As a boy did he work in a porcelain factory where his drawing talents led to him being chosen to paint designs on fine china
+    - Where do bees live
+    - Does a black moth mean that someone has died
+    - What did Canada adopt in 1965
+    - Is there an airport in Liechtenstein
+    - What is The Remarkable Millard Fillmore
+    - Does the name Nairobi come from the Maasai phrase Enkare Nyirobi which translates to the place of cool waters
+    - What did Ford say about his biological father
+    - Are otters totem animals
+    - From what did Pascal suffer throughout his life
+    - Was Millard Fillmore the thirteenth President of the United States
+    - Are hutongs disappearing
+    - Is eel blood toxic to humans
+    - Is Uruguay s oldest church in San Carlos  Maldonado
+    - The trumpet can be confused with what close relative
+    - What is the Irish legend of the Children of Lir about
+    - What is the best physician
+    - Is the US copyright representative for the Picasso Administration the Artists Rights Society
+    - Was Nikola Teslas mother illiterate
+    - Is the cello a stringed instrument
+    - Is Portuguese an official language of Andorra
+    - Was Volta made a count by Napoleon in 1810
+    - Are cougars larger than jaguars
+    - Has Qatar a modern Telecommunication system centered in Doha
+    - Are there also a variety of regional languages In addition
+    - Why are ducklings particularly vulnerable
+    - What sort of cats are solitary
+    - Was Nikola Tesla close friends with Mark Twain
+    - Is the larger work now almost universally attributed to Leonardo
+    - Is polar bear a carnivore
+    - How many arms does an octopus have
+    - Is english a de  jure  official  language  of Israel
+    - Is a violin sometimes informally called a fiddle regardless of the type of music played on it
+    - Is it true that onefifth of world population speak some form of Chinese
+    - Who was Pascals younger sister
+    - Appreciated during his lifetime did his fame grow in the years after his death
+    - Did Newton reject the churchs doctrine of the Trinity
+    - Where is the leopard distributed
+    - Who or what fell in love with abigail powers
+    - How many siblings did Faraday have
+    - Is Romania a semipresidential democratic republic where executive functions are shared between the president and the prime minister
+    - Does each type of drum head serve its own musical purpose
+    - Are Canada s official national sports ice hockey  winter  and lacrosse  summer
+    - When did Beijing host the Olympic Games
+    - How heavy was the largest polar bear on record
+    - Is the president elected by popular vote
+    - Wasnt Michelangelo abstemious
+    - What do tigers powerfully built legs and shoulders allow tigers to do
+    - Who became adversaries with Nikola Tesla
+    - Is a bee an insect
+    - Was Anders Celsius November 27 1701 April 25 1744 a Swedish astronomer
+    - What school does Harry Potter go to
+    - Was CharlesAugustin de Coulomb a Spanish Biologist
+    - What type of current did Tesla invent
+    - Is the drum a member of the percussion group
+    - What is James Watt most famous for
+    - What is the point called that is bolted or glued to the body of the guitar
+    - What religion do most Uruguayans profess
+    - Are tortoises land based
+    - Does snow fall in Egypt
+    - What was Alessandro Voltas profession
+    - What was Amedeo Avogadros profession
+    - Was Monroe anticlerical
+    - How long is polar bears guard hair
+    - Where did Tesla study electrical engineering
+    - Does the Portuguese language have its roots in the Latin language
+    - How many parts of speech does the Korean language contain
+    - Did Norman Rockwell publish a total of 321 original covers for The Saturday Evening Post over 47 years
+    - How do most ants travel
+    - Is it true that the ideas of the Enlightenment shaped the development of the city
+    - How many state parks are in San Francisco
+    - What covers approximately 71 of the Earths surface  Land or water
+    - Give an example of the most comprehensive records extant of any major artists beginnings
+    - What percentage of the population dont speak English or French at home
+    - What did Anders Celsius determine about the boiling of water
+    - What is the primary domestic source of water supply
+    - Is in the 1996 movie Surviving Picasso Picasso played by actor Anthony Hopkins
+    - What subject did Avogadro study first
+    - Did Suharto resign as president
+    - Did PierreAuguste Renoir die in Limoges HauteVienne France the child of a working class family
+    - What part of the cymbal gets the best crash
+    - Which is the largest plateau in the world
+    - Is fifty percent or more of Korean vocabulary of Chinese origin
+    - Was Coolidge the thirteenth President of the United States
+    - How many groups are turtles broken down into
+    - Was James Monroe President of the United States
+    - Where was Popkomm held before moving to Berlin
+    - Which temperature scale did Celsius propose
+    - What are the three dialect regions of Vietnamese
+    - Were the koalas of South Australia largely exterminated during the early part of the 20th century but the state has since been repopulated with Victorian stock
+    - Where was the largest elephant ever recorded shot
+    - Which is the fastest animal on the land
+    - Is he buried in the Princeton Cemetery of the Nassau Presbyterian Church
+    - What is tobogganing
+    - Is french descendant of the Latin language
+    - Can you meet someone through attending a church
+    - Is the Nauen plain north of Berlin
+    - Do Terrestrial tortoises have short feet
+    - Is it true that massachusetts sent him in 1774
+    - Is the main sport in Uruguay football
+    - Do male ants take flight before females
+    - Who has released an album or song named Santiago
+    - Do ants belong to the Hymenoptera order
+    - What do some historians of science refer to Faraday as
+    - Give an example of the highest growth rates of any city in Africa
+    - Is Finnish a member of the BalticFinnic subgroup of the Uralic languages
+    - Are Pleurodira known as sidenecked turtles
+    - Is the famous dragon gate at the entrance to the district at the corner of Grant and Bush Street
+    - Who wrote the first novel in Finnish
+    - What Greek mythical creatures were depicted holding cymbals
+    - How much is the average income of an African woman compared to a European man
+    - Are Immature sea turtles not cared for by the adults
+    - Did Fillmore not turn down the honor  explaining that he had neither the  literary nor scientific attainment  to justify the degree
+    - The Celsius crater on the Moon is what
+    - Was the Jakarta area part of the fourth century Indianized kingdom of Tarumanagara
+    - Who was the first president of the United States
+    - What are some economic uses for duck
+    - Are ducks in the Arctic Northern Hemisphere migratory
+    - Did Faraday construct the ancestor of modern power generators
+    - Is there a becquerel crater on the moon and a becquerel crater on mars
+    - How many regions is Ghana divided into
+    - Must  One conclude from these experiments that the phosphorescent substance in question emits rays which pass through the opaque paper and reduces silver salts
+    - What is surplus killing
+    - Did Grover Cleveland win the 1884 election
+    - When is the Pacific typhoon season
+    - Is RRB  officially the state of qatar LRB arabic   transliterated as dawlat qatar RRB  an arab emirate in southwest asia
+    - How many head entries for character definitions does the Zhonghua Zihai 20013213262338328023 1994 contain
+    - What do we refer musicians who play flute
+    - Was Faraday a devout Christian
+    - Where was Theodore Roosevelt from
+    - What is the Swahili word for the Swahili language
+    - In 1820 Avogadro became a professor of physics where
+    - How is South China linguistically different from North China
+    - Does the Gray Wolf share an ancestry with the domestic dog
+    - Has Urbanization eliminated many areas of former primary rainforest  with the only remaining area of primary rainforest being Bukit Timah Nature Reserve
+    - Is Jakarta the 12th largest city in the world
+    - Did John Adams go to Harvard
+    - What is the dominant religion in Ghana
+    - What is the cause of local earthquakes
+    - Who was born in Newington Butts near presentday South London England
+    - Did Ford need to do extra work to pay for college
+    - Are Cubs born in December without awakening the mother
+    - Has Singapore a network of reservoirs and water catchment areas
+    - Was Cleveland born in Caldwell New Jersey to the Reverend Richard Cleveland and Anne Neal
+    - what is the name of the event that draws the worlds top riders to malaysia
+    - Did Cartier not use the word  Canada  to refer to not only that village  but the entire area subject to Donnacona  Chief at Stadacona
+    - After what event was the Turkish Language Association established
+    - Was Grant elected president as a Republican
+    - Was Anders Celsius   November 27   1701  April 25   1744   a Swedish  astronomer
+    - Is the most read newspaper in Finland Taloussanomat
+    - What is the weather like at Lake Volta
+    - Have more than five Presidents lived past the age of 90
+    - Where did Volta enter retirement
+    - What is caching food
+    - What are deposited in holes dug into mud or sand
+    - Does a standard piano have fewer strings than a harp
+    - What has Uruguay done to be competitive in agriculture
+    - The district is bordered to the southwest by Uhuru Park and where
+    - What is the population of the city of Antwerp
+    - Who did Millard Fillmore fall in love with
+    - Did James Watt improve an engine
+    - Do more northern speakers speak the southern regional dialect than southern speakers speak the northern dialect
+    - Are swans and ducks birds of the same family
+    - What language besides Malay is in the Austronesia language family
+    - When did Volta retire
+    - What are zebras hunted for
+    - Whats the main highway in Ottawa
+    - How many colors are there in a rainbow
+    - Are ride cymbals very common
+    - Does the diet of foxes include reptiles
+    - What became one of the most important commercial and military centres of the British Empire
+    - In Belgium however is quatrevingts universally used
+    - Where was Woodrow Wilson born
+    - Is he also noted for his work for the Boy Scouts of America BSA
+    - Can larger penguins dive deep in case of need
+    - Who lost control of his party to the agrarians and silverites in 1896
+    - Did Volta have a passion for the study of electricity
+    - Is octopus a common food in Mediterranean cuisine as well as Portuguese cuisine
+    - Did vibraphones exist in 1930
+    - In which country is Portuguese the coofficial language with Cantonese Chinese
+    - Did old English develop into Middle English
+    - Which are the colors in a rainbow
+    - Is the Giant Panda a carnivore
+    - Was Celsius born in Uppsala in Sweden
+    - Which election did Grover Cleveland win
+    - Does a classical lyre have a soundchest
+    - How do reservoirs and water relate
+    - Give an example of the most influential musicians of the 20th century
+    - Is the name of the upper shell of a turtle called the plastron
+    - Stars and Stripes is the nickname of the flag of which country
+    - When did concert flutes begin appearing in concert ensembles
+    - Do octopuses have two eyes and four pairs of arms
+    - Who is Daffy Duck
+    - What was Henri Becquerels profession
+    - Who is most noted for his contributions to the theory of molarity and molecular weight
+    - What material is a chi flute fashioned from
+    - Did John Adams represent the Continental Congress in Europe
+    - What is the Sanskrit word for swan
+    - What happened in 1764
+    - What is a collective noun for a kangaroo
+    - Which month of the year has the least number of days
+    - Was Liechtenstein completed in November 2000
+    - Is the Adephaga suborder larger than the Polyphaga suborder
+    - Who determined to pursue mathematics
+    - Was Grover Cleveland the twentyseventh president of the United States
+    - In what year did James travel to Lodon to study instrumentmaking
+    - Was his father   Henri  Coulomb  inspector of the Royal  Fields  in Montpellier
+    - Is it also possible that penguin comes from the Latin pinguis  fat
+    - Garbage is what
+    - Which constellation is said to resemble a lyre shape
+    - Which is the first element on the periodic table of elements
+    - What is Avogadros number
+    - Was Nairobi founded in 1899
+    - Where is Amedeo Avogadro from
+    - Is the otter in the same family as the badger
+    - How does a flute player change the pitch of the sound
+    - Are there seven verb paradigms or speech levels in Korean
+    - Is there one negation word in Malay
+    - Did his mother die of pneumonia
+    - What is the outer layer of the cuticle made of
+    - Who did President Lincoln promote of major general in the regular army effective July 4
+    - What are the two main varieties of Indian flutes
+    - Was Vietnamese influenced by Chinese
+    - Does San Francisco have a high percentage of gay and lesbian individuals
+    - Can syllables begin with a vowel
+    - Where did CharlesAugustin de Coulomb die
+    - Qatar became an independent sovereign state in what year
+    - Was Calvin Coolidge Republican
+    - Does Uruguay recognize samesex civil unions
+    - Is the purfling just for decoration
+    - Did lincoln have 18 months of schooling
+    - What caused Calvin Jrs death
+    - Is English Ghanas official language
+    - How do turtles chew food
+    - What is the total number of Chinese words
+    - What district was Ford elected from
+    - Which is the hottest continent on Earth
+    - Are fennec foxes endangered
+    - Is a guitar played with a plectrum like a lyre
+    - Does Liechtenstein have an army
+    - Are male otters dogotters
+    - His passion been always the study of what
+    - How long is an adult cougars paw print
+    - In which years were John Monroe elected as President
+    - What is a country with which Finland is involved in an international conflict
+    - Copenhagen is the capital of what country
+    - What is Taipei 101
+    - Where did Wilson attend law school
+    - Why polar bear is a special species
+    - Are there at least two films describing Tesla s life
+    - Was Wilson a member of the Phi Kappa Psi fraternity
+    - Where do leopards often hide their kills
+    - Can a xylophone be 3 octaves
+    - Is it a winter sports resort  although it is perhaps best known as a tax haven
+    - Who was on the committee with Adams to draft  a Declaration of Independence
+    - When did Monroes presidency expired
+    - Did Nikola Tesla die alone
+    - Did continental European immigrants not settle the prairies
+    - What is actually black in color
+    - What happened in 1757 to 1759
+    - Do penguins have a better than average sense of hearing for birds
+    - Where is smoked eel considered a delicacy
+    - Consequently what is not considered a serious painter by some contemporary artists who often regard his work as bourgeois and kitsch
+    - Who shares credit with Isaac Newton for developing calculus
+    - Was Calvin Coolidge born in Plymouth Windsor County Vermont
+    - What are the largest and politically dominant ethnic group
+    - Did Henri Becquerel live to be 80 years old
+    - Were Slide trumpets the first trumpets allowed in the Christian church
+    - Why is Arabic related to Islam
+    - Did Faraday discover diamagnetism
+    - What are the typical features of a tiger country
+    - How many years ago was the Luther Bible by Martin Luther printed
+    - What is Ottawas major league hockey team
+    - Does Egypt receive the least rainfall in the world
+    - Have most otters fish as the primary item in their diet  supplemented by frogs  crayfish and crabs
+    - What is the weather like in summer
+    - Is the Museum of Gold in Lima
+    - Is Nassau County named after a German town
+    - What is Ottawas population
+    - Is Nairobi not the capital as well as largest city of Kenya
+    - What completed in November
+    - What is Nassau Coliseum
+    - Do all ants build nests
+    - Is the smallest penguin species the little blue penguin LRB also known as the fairy penguin RRB  which stands around 40 cm tall LRB 16 in RRB and weighs 1 kg LRB 2
+    - Hassan Massoudy is a master of what genre
+    - Are the prefixes en and em always nasalized
+    - Where does the German President live
+    - Were Newtons religious views consistent with Anglicanism
+    - How many cymbals typically go in a drum kit
+    - What color symbolizes peace
+    - Had Monroe racked up many debts during his years of public life
+    - Which embassy in Nairobi was bombed in August 1998
+    - What is largest polar bear on record
+    - Who did Massachusetts send in 1774
+    - What led Becquerel to investigate the spontaneous emission of nuclear radiation
+    - Who was President when Wilson finished Congressional Government
+    - Was Liechtenstein part of the ancient Roman province of Raetia
+    - Is Nassau Range the highest mountain range in the world
+    - What did James Monroe make in 1817
+    - Give an example of the most renowned works of the Renaissance
+    - When did the first official report of kangaroo blindness take place
+    - What positions Ford played in the school football team
+    - How many domestic tourists visit Melbourne
+    - What are the three cat species that are native to Canada
+    - What does it sound like to play cymbals with a cello bow
+    - Is the flute a musical instrument
+    - Who was the first gymnast to score a perfect ten
+    - Is there a statue of Watt in the White House
+    - Is the collective form octopus usually reserved for animals consumed for food
+    - What is Northern Californias most widely circulated newspaper
+    - What kind of words have been borrowed from Chinese
+    - Where do wolves have scent glands
+    - Who took a hard line that reduced violence by groups like the Ku Klux Klan
+    - Give an example of the many Sukarno era monuments in the city
+    - A year before improving and popularizing the electrophorus what did Volta become
+    - Are kangaroos farmed to any extent
+    - For how long has the classification of dialects spoken outside of Finland been a controversial issue
+    - Are Western flutes simpler than Indian flutes
+    - Where did the expression a sitting duck come from
+    - What is the highest mountain in Romania
+    - Was Michelangelos mother Francesca di Neri del Miniato di Siena
+    - Do other landmarks include the Istiqlal Mosque as well as Jakarta Cathedral
+    - Has the terrain in the city been artificially raised
+    - Do ants belong to the same order as bees
+    - Did Gerald Ford serve as the Republican Minority Leader of the House of Representatives
+    - What fraternity was Coolidge a member of
+    - When did Alessandro Volta improve  and popularize the electrophorus
+    - How many years ago did he resign his appointment as intendant de eaux et fontaine
+    - What musical styles is the trumpet used in
+    - How long does it take for the panda cubs skin to turn gray
+    - Was Becquerel born in Paris into a family which including he and his son Jean produced four generations of scientists
+    - Was watt a gentleman greatly respected by other prominent men of the Industrial Revolution
+    - Where was much of Montreals industry during the late 19th and earlytomid 20th century
+    - Is romania LRB  RRB a country in southeastern europe
+    - For how long was Ford a member of the House of Representatives
+    - Do drums consist of at least eight membranes
+    - Is 9   of the Internet  population German
+    - How can an octopus defend against predators
+    - Did Faraday receive an extensive formal education
+    - Is Swedish a descendant of Old Norse
+    - When did Qatar become an independent state
+    - When did Canada have one of the largest armed forces in the world
+    - How do sea otters insulate themselves
+    - When did the Gettysburg address argue that America was born
+    - Can guitars be divided into two broad categories
+    - Is the spelling of Turkish phonetic
+    - Is Kuala Lumpur the capitol of Malaysia disfluent
+    - When was Melbourne officially declared as a city
+    - Where did Watt attend university
+    - Did the Dutch build the Elmina Castle
+    - Are his last words often quoted as  Thomas Jefferson survives
+    - What is a roo
+    - About how many Koreans speakers are there
+    - When did his father die
+    - Who was not long in finding another lover Jacqueline Roque
+    - Are there many Roma in Romania
+    - Where is Irving Berlins piano located
+    - When did Coolidge meet and marry Grace Anna Goodhue
+    - What are Carleton Universitys athletic teams called
+    - Where are there small Portuguesespeaking communities
+    - How is Singapores climate characterized
+    - Do lobsters have blue blood
+    - Does english grammar have minimal inflection
+    - When was the first factory opened
+    - What do humans use bees for
+    - How does the distribution size of the leopard compare to the distribution of other wild cats
+    - What happened in 1745
+    - Where is old Ghana in relation to present Ghana
+    - Have plains zebras been crossed with mountain zebras
+    - Do pandas hibernate
+    - How many consonants are there in the English alphabet
+    - How many living species of African Elephants are there
+    - What is the Polish word for swan
+    - Who dismantled partisan and sectional coalitions
+    - What is used to protect a vehicale from a Kangaroo
+    - Did one places between the phosphorescent substance and the paper a piece of money or a metal screen not pierce with a cutout design
+    - Is it true that institution formed the foundation of electric motor technology
+    - Was CharlesAugustin de Coulomb a member of the National Institute
+    - What was the Dead or Alive 4 fighting arena modeled after
+    - What are the olympic medals made out of
+    - What is the name of a specialized species of duck adapted to catch large fish
+    - Is it true that he sent in federal troops to chicago
+    - Who was Blaise Pascals father
+    - Did ford attend the University of Michigan
+    - Are there two common  word  orders
+    - In what year did the Spanish establish a fort at the Golden Gate and a mission named for Francis of Assisi on the site
+    - Is Korean the official language of Korea
+    - How many species and genera does otter have
+    - Are among the bestknown of Rockwells works the Willie Gillis series Rosie the Riveter although his Rosie was reproduced less than others of the day Saying Grace 1951 and the Four Freedoms series
+    - Which type of beetle is a pest of potato plants
+    - Did Abraham Lincoln live in the Frontier
+    - What does vitula mean
+    - What is temperature would water have to be to be halfway between its standard boiling and freezing point
+    - What did Joseph Henry likely discover
+    - Is Egypt in Asia
+    - Does Vietnamese borrow from Latin and Greek
+    - What was Amedeo Avogadros birthplace
+    - At what age can a zebra breed
+    - Could Blaise Pascal move without crutches
+    - What language was used in the Zhou and Southern Dynasties
+    - Is the Romanian economy doing well
+    - Is Ghanas head of state John Agyekum Kufuor
+    - How heavy is a male polar bear
+    - What religion holds majority in Melbourne
+    - What trail did Lincoln use a Farmers Almanac in
+    - Does Vietnamese have a comparatively large number of vowels
+    - Was Alessandro Volta taught in public schools
+    - What shares land borders with Papua New Guinea East Timor and Malaysia
+    - Is a polar bear white in color
+    - What was the strongest house made of in the Three Little Pigs
+    - How much does a leopard weigh
+    - When was Middle Chinese used
+    - Are lobsters invertebrates
+    - What is Amedeo Avogadro
+    - Who discovered benzene
+    - Does the word violin come from the Middle Latin word vitula meaning stringed instrument
+    - What allows the butterfly to evade predators
+    - Are polar bears excellent swimmers
+    - Is Ford related with the assassination of John F Kennedy
+    - What is the national currency of Liechtenstein
+    - What is the Arabic word for municipalities
+    - When do wolves molt
+    - When did Tesla receive his last patent
+    - What is the citys population
+    - What has been discovered about turtles organs
+    - Who referred to the cello as basso de viola da bracc
+    - Does every drumhead make the same sound
+    - What is the life expectancy for men in Finland
+    - Did Pascal have poor health throughout his life
+    - James Watt was born where
+    - How does the government of the Peoples Republic of China often refer to all divisions of the Sinitic languages besides Standard Mandarin
+    - Is the xylophone a precursor to the vibraphone
+    - Why may English translation of Koreans adjectives misleadingly suggest that they are verbs
+    - When was his last painting for the Post published
+    - Is the Trumpeter Swan the largest bird
+    - How much weight do female polar bears gain during pregnancy
+    - What book defined the official Finnish language
+    - What are some extinct predators of the kangaroo
+    - What is the top color in a rainbow
+    - In what language was his 1811 paper published
+    - What is a person that makes or repairs violins called
+    - Was Michelangelos output in every field during his long life prodigious
+    - How old was Alessandro Volta when he died
+    - Does Fender make cymbals
+    - where French has a similar phenomenon with alveolar affricates instead of postalveolars
+    - When did he drop John from his name
+    - Has Leonardo often been described as the archetype of the Renaissance man a man whose unquenchable curiosity was equaled only by his powers of invention
+    - When Becquerel discovered radioactivity whose work did he investigate
+    - Is it advantageous for a grand pianos metal plate to be quite massive
+    - Is Swahili a Bantu language
+    - Was Arabic a major vehicle of culture in Europe
+    - Is he one of the most recognized figures in 20thcentury art
+    - What did he invent
+    - In what year did Avogadro stop teaching at Turin University
+    - Is the Giant Panda a terrestrial animal
+    - Did Coolidge meet and marry Grace Anna Goodhue
+    - What are the elephants ears important for
+    - Which is the largest animal in the world
+    - When was the An Shi Rebellion launched
+    - Is the leftmost pedal on a grand piano called the una corda
+    - Who manages Candlestick point
+    - Did ants evolve from wasplike ancestors in the midCretaceous period between 110 and 130 million years ago and diversified after the rise of flowering plants
+    - How many people are there in the world
+    - Does the production of chemical weapons raise an ethical issue
+    - Was Nassau placed in operation by Robert Fulton
+    - What is the second main orchestral use of cymbals
+    - When was Lee Kuan Yew prime minister of Singapore
+    - Is santiago Spanish for St James
+    - What is a collective noun for kangaroos
+    - Was Tesla born in the United States
+    - Do scutes fall away from the turtles shell
+    - How do india and latin america relate
+    - What percentage of the words in Turkish vocabulary have Turkish origins
+    - Have consonant clusters been lost
+    - What countries border Liechtenstein
+    - Do wolf pups tend to have darker fur than adults
+    - Is there a programming language called Pascal
+    - Is James Watt French
+    - Give an example of the origins of the term action painting
+    - How does Swahili time run
+    - Does the Australian Black Swan have white feathers on its wings
+    - Do worker ants have wings
+    - Was Tesla on the cover of Time magazine
+    - When was his house demolished
+    - What exception to the rules of vowel harmony do compound words have
+    - How many international airports does Montreal have
+    - Who died at his house at Hampton Court on August 25 1867
+    - Why did Grant think that war was unjust
+    - What are female foxes called
+    - What expired on March
+    - Is Singapore a citystate
+    - According to Readers Digest is Finland best for living
+    - How long was Alessandro Volta a professor at the University of Pavia
+    - Is the syntax of German different with different rules
+    - Was the arrival of Louis Kossuth exiled leader of a failed Hungarian revolution another issue that presented itself during Fillmores presidency
+    - What is the earliest extant transverse flute
+    - What do leptocephali eat
+    - What are most electric guitar bodies made of
+    - Does kelon increase or decrease tone quality of the xylophone
+    - Is the Breeze Eazy  method sometimes used to teach younger students
+    - What is the official language of Romania
+    - How many territories joined to form Romania
+    - Do male giraffes weigh more than female giraffes
+    - Did Lincoln ever represent Alton  Sangamon Railroad
+    - Does the Gendarmenmarkt border the French Cathedral
+    - Is Adams birthplace part of a national park
+    - Do sea otters have long muscular tails
+    - Was Lincoln chosen as a presidential candidate in 1860
+    - Do Chinese and Japanese have spaces between words
+    - When was James Monroe appointed to Secretary of War
+    - Where is the city of Antwerp
+    - How often do turtles breed
+    - Is otter a kind of mammal
+    - Which animal is called King of Jungle
+    - However  are nonhuman plural nouns grammatically considered to be feminine singular
+    - What is located at the end of the guitar neck furthest from the body
+    - Is Liechtenstein heavily urbanized
+    - Can speakers of modern Malay understand Old Malay
+    - What is the largest country in the world
+    - Which guitars use three singlecoil pickups
+    - Drums are usually played by what
+    - Have two of Renoirs paintings sold for more than US0 million
+    - Is the most popular sport in Montreal ice hockey
+    - Since when has Egypt been a republic
+    - How many children did Avogadro have
+    - Which is the largest country in the world
+    - Where was Avogadro a professor of physics
+    - Where was Commodore Matthew C Perry sent to open Japan to Western trade
+    - Was Dizzy Gillespie a famous trumpeter in 1998
+    - Who has its own political legislature and governor
+    - What is Monroe Doctrine
+    - Can a short bar follow a long bar
+    - What economic uses to ducks have
+    - Did Grand Rapids supporters not urge him to take on Bartel J Jonkman  the incumbent Republican congressman
+    - Can turtles take many years to reach breeding age
+    - Was Newton a English physicist
+    - Is the Polar Bear the mascot of Bowdoin college
+    - Was Ulysses Grant a general in the American Civil War
+    - Which two parts of the body continue to grow for your entire life
+    - In what year was Nairobi founded
+    - Where is the word swan derived from
+    - Is there cello in performances by Rihanna
+    - Was Another primary objective of Fillmore to preserve the Union from the intensifying slavery debate
+    - Why does Jakarta suffer frequent flooding
+    - Did he not die at the age of 55 in Le Croisic
+    - Was Tesla hired by Edison
+    - When was the pan flute spread to other parts of Europe
+    - What is the estimated population of Egypt
+    - Is Santiago the national capital of a country
+    - When did Lincoln begin his political career
+    - What happened in 1811
+    - Is Montreals economy the third largest of all cities in Canada
+    - Did Singapores standard of living decrease since independence
+    - Did Fillmore form a law partnership before or after he founded the private University of Buffalo
+    - Are otters playful animals
+    - The eggs of the largest species are what
+    - What may a leopard be mistaken for
+    - When did John Adams serve as Vice President
+    - What happens when mothers lose a chick
+    - Who laid out a street plan for the expanded settlement
+    - How many strings does a violin usually have
+    - What did The Legal Tender Act of 1862 establish
+    - Wasnt Malay language written using Pallava
+    - Why Churchill called the occupation of Singapor by Janpan during WWII Britains greatest defeat
+    - Is the leopard solitary
+    - Hence  can relative molecular masses be calculated from the masses of gas samples
+    - Is the bass trumpet the smallest trumpet
+    - Is the battery made by Volta credited as the first electrochemical cell
+    - Are violins a single size
+    - Different species of kangaroos eat what
+    - Is the trumpet constructed of brass tubing bent twice into an oblong shape
+    - Who was Roosevelts presidential hero
+    - How many seasons does Kuala Lumpur experience
+    - Arent drums usually played by the hands
+    - Who suggested Lincoln grow a beard
+    - How many cards are there in a complete pack of cards
+    - What are cymbals made of
+    - What happened with a bromide emulsion in two sheets of very thick black paper
+    - Is Nairobi the capital of Kenya
+    - Which superhero swings on a web
+    - Where do Giant Pandas live
+    - What types of unrelated water birds with similar forms are ducks sometimes confused with
+    - What consists of a low barren plain covered with sand
+    - What shape is a trumpet bent into
+    - What has many possible meanings
+    - How to travel to work from the city to Moscow
+    - Who became a professor of physics at the Royal School in Como
+    - Was Coulomb born in Angoulme France to a welltodo family
+    - Are elephants good swimmers
+    - What is the SI unit measuring magnetic flux density or magnetic induction
+    - Whats the timber of ancient cimbals like disfluent
+    - Did the Occult influence Newtons theory of gravitation
+    - What notable people have been named Santiago
+    - Is Pencak Silat an Indonesian martial art
+    - How are westernstyle xylophones characterised
+    - Does a violin have four strings
+    - What was one of the results of the introduction of the new Turkish alphabet
+    - What was ScotsIrish and Scottish
+    - To whom was Millard Fillmore born to
+    - Was Lee Kuan Yew a successful leader of Singapore
+    - Did Theodore Roosevelt go to Harvard
+    - When did Goh Chok Tong succeed Lee as Prime Minister
+    - Who was Avogadros wife
+    - Is a Kangaroo a Marsupial
+    - What was the Consitution Act formerly called
+    - Is the dragonfly associated with late summer as well as early autumn
+    - How does poverty in San Francisco compare to the nationwide average
+    - Is uruguays landscape mountainous
+    - Was Rockwell also commissioned to illustrate over 40 books including Tom Sawyer as well as Huckleberry Finn
+    - When did James Monroe introduce the Monroe Doctrine
+    - Who is the head of state of Ghana
+    - What music group was named after Tesla
+    - What is the first word on the page
+    - Where were immigrants from in the 1800s
+    - How many years ago was it when Volta married the daughter of Count Ludovico Peregrini  Teresa  with whom he raised three sons
+    - What is panda diplomacy
+    - What did Tourism in Romania attract in 2005
+    - How are new words formed in Malay
+    - Do his works enjoy a broad popular appeal in the United States where Rockwell is most famous for the cover illustrations of everyday life scenarios he created for The Saturday Evening Post magazine over more than four decades
+    - Is the largest living species the emperor penguin LRB aptenodytes forsteri RRB
+    - Is a third  prefix the object  prefix
+    - Does the octopus have two eyes
+    - Can beetles be found in almost all habitats
+    - Is there a small heliport at Balzers in Liechtenstein available for charter helicopter flights
+    - Did Roosevelt study biology
+    - What kind of animal only eats meat
+    - Where are turtle eggs layed
+    - In ant colonies what are the fertile female ants called
+    - When did he die
+    - What are Ottawas primary industries
+    - The xylophone is an instrument from what family
+    - Is an Asian elephant smaller than an African elephant
+    - How many Eagle Scouts were involved in Fords funeral procession
+    - Do female polar bears weight more than the male
+    - Does it snow in Ottawa
+    - Was Wilson a remarkably effective writer and thinker
+    - Where is Melbourne situated
+    - Is he most noted for his contributions to the theory of molarity and molecular weight
+    - What is the biggest city in Finland
+    - Are Sports in Indonesia generally maleorientated
+    - How many children did Grover Cleveland have
+    - How can a flutes volume be increased
+    - Are beetles endopterygotes
+    - Is coulomb distinguished in the history  of mechanics  and  of electricity and  magnetism
+    - Which is the coldest location in the earth
+    - Was CharlesAugustin de Coulomb ever employed at La Rochelle
+    - Which country gifted The Statue of Liberty to the United States
+    - Does a trumpet have a mellower tone than a cornet
+    - What used Singapore as a strategic trading post along the spice route
+    - What are orchestral crash cymbals technically called
+    - Is lima the capital  and  largest  city  of Peru
+    - How many planets are there in our solar system
+    - Do all eels live in fresh water
+    - Who did Sir Thomas Stamford Raffles work for
+    - Who did Newton see as the master creator
+    - Is Ottawa colder than Moscow in January
+    - Why are Harp Guitars difficult to classify
+    - Do singaporeans enjoy squid
+    - Was Amedeo Avogadro Italian
+    - What did Alessandro Volta invent in 1800
+    - In 1602 the British East India Companys first voyage commanded by Sir who arrived in Aceh and sailed on to Banten where they were allowed to build a trading post
+    - Who was the first to perform and publish careful experiments aiming at the definition of an international temperature scale on scientific grounds
+    - Why is the giant otter becoming increasingly rare
+    - Are Octopus highly intelligent
+    - Why did Roosevelt start Boxing lessons
+    - What had the AngloSaxons created by the 600s
+    - Do the octopuses in the less familiar Cirrina suborder have two fins and an internal shell
+    - Does Beijing mean northern capital
+    - What allows a duck to filter water out of the side of their beaks and keep food inside
+    - What animals are related to otters
+    - How old was Pascal when he died
+    - Where was James Monroe born
+    - Becquerel wrapped a fluorescent substance in what
+    - Has tusklessness become a rare abnormality
+    - Does it have a border with Norway
+    - Are turtles ectothermic
+    - Is there a way to approximate the age of a turtle
+    - During what period was Akhenaten a Pharaoh
+    - Was Charles Augustin  de Coulomb   born  June  14   1736   Angoulme   France    died August 23   1806   Paris   France   a French  physicist
+    - What is the MRT
+    - What is the fastest land animal
+    - How do the Java and Bali use xylophones
+    - Was Tesla rich at the time of his death
+    - What is Santiago
+    - Whose ideas inspired CharlesAugustin de Coulombs experiments on the resistance of masonries
+    - Is a trumpet played by blowing air through closed lips
+    - Is the the biggest university in Jakarta the University of Indonesia
+    - Where do joeys complete postnatal development
+    - Did Grover Cleveland support womens suffrage
+    - Are otters herbivores
+    - Is the Gray Wolf a mammal
+    - What is the sustain pedal called
+    - Is the word cymbal derived from a Germanic word
+    - Is volta buried in the city  of Como
+    - Who spend half of their life on land and half in the oceans
+    - How many subspecies of the Giant Panda are there
+    - What suborder of turtles is extinct
+    - What are the three heaviest cats in the world
+    - How many siblings did Nikola Tesla have
+    - What are prey of various animals including birds and mammals
+    - What are the patterns of vowel harmony
+    - Do older pianos have more keys than modern pianos
+    - Where is the Berliner Dom located
+    - Which instrument is used for measuring wind speed
+    - Do turtles breathe air
+    - When did he flee to Venice
+    - The only consolidated citycounty in California does it encompass a land area of on the northern end of the San Francisco Peninsula making it the second most densely populated city in the United States
+    - Ultraviolet vision was first discovered in ants by Sir who in 1881
+    - Was Qatar University founded in 1973
+    - What is CharlesAugustin de Coulomb best known for
+    - Why did Lincoln issue the Emancipation Proclamation
+    - What is the population of Copenhagen
+    - Was Henri Becquerel a French physicist
+    - Does the native pronunciation of Qatar sound like cutter
+    - Is Uruguay a member of the Cairns Group of exporters of agricultural products
+    - Did the US join the League of Nations
+    - Is Grover Cleveland honest
+    - What is the largest primarily Frenchspeaking city in the western world
+    - What are dark leopards known as colloquially
+    - Do mikrolets travel on the main roads
+    - Is The Celsius crater on the Moon named after him
+    - When is the end of the independence war of Bangladesh
+    - What was founded by the Spanish in the early 18th century as a military stronghold
+    - Did he share the Nobel Prize in Physics
+    - Do zebras sleep standing up
+    - How many townships are in Ottawa
+    - Is Matti Vanhanen the Prime Minister of Finland
+    - Why otters are considered as totem animals
+    - Was Volta buried where he died or was he buried someplace else
+    - Is the foot pedal framework for a piano called a lyre
+    - Is-  ref Swahili unusual among subSaharan languages
+    - Who assassinated Lincoln
+    - Was he regarded as a mostly reclusive artist
+    - Have larger kangaroos adapted much better to changes
+    - What do all turtles and tortoises breathe
+    - Who achieved international fame as the leading Union general in the American Civil War
+    - Do sea turtles lay eggs on dry sandy beaches
+    - Are the Pleurodira sometimes known as the sidenecked turtles  a reference to the way they withdraw their heads into their shells
+    - Do women live longer than men
+    - What does the word Ghana mean
+    - Does Modern Standard Arabic continue to evolve like other languages
+    - What did Uruguay win in 1828
+    - Give an example of the longest most destructive and most lethal sieges of major cities in modern history
+    - As of August 1st 2006 how many trains stop daily at the Beijing Railway Station or the Beijing West Railway Station
+    - What did Coolidge do after graduating from Amherst
+    - Is singapore LRB     RRB  officially the republic of singapore LRB     RRB  an island nation located at the southern tip of the malay peninsula
+    - Did the economy improve in Jakarta in 2007
+    - Was watt a fellow of the Royal Society of Edinburgh and the Royal Society of London
+    - Was Ford released from the hospital
+    - When did the tin whistle first appear
+    - Which festival is called the festival of light
+    - What was built to play in both B and A keys
+    - Do penguins feed on krill
+    - What was Roosevelts justification for supporting desegregation of schools in New York
+    - Did eucalypt forests grow in the place of rainforests
+    - Where was Volta born
+    - Is Ottawa the capital of Canada
+    - Which part of the strings does the left hand touch
+    - Where was the League of Nations created
+    - Did Wilson support the committee system
+    - Is Berlin the capital city of Germany
+    - Who was Fort Nassau built by
+    - Regarding this topic what did Antonio Stradivari do
+    - What drives sea otter almost to extinction
+    - Is it true that his passion been always the study of electricity
+    - Where does air pollution in Beijing come from
+    - What was Adams political party
+    - Where was there a vast swarm of butterflies
+    - Who is the Mayor of Montreal
+    - If Henri Becquerel was alive today how old would he have been
+    - Copenhagen is ranked number one worldwide for which things
+    - Are the most active in Damascus and Cairo
+    - How many years ago was it when he became a professor of physics at the University of Turin
+    - Can some cylindrical shell drums have no drum heads
+    - Are there also discussions of having OC Transpo Light Rail and STO Transitway networks linking on the Gatineau side of the Ottawa River
+    - What led Pascal to his religious conversion
+    - What happened in 1865
+    - When did it sign on the air
+    - Is it true that semantics causes a number of false friends
+    - Which gas is most abundant in the earths atmosphere
+    - How many long was Lincolns formal education
+    - Can polar bears be seen under infrared photography
+    - Where was Millard Fillmore born
+    - When did the Catholic University of Eastern Africa which obtain its Letter of Interim Authority
+    - Did Lincoln beat John C Breckinridge in the 1860 election
+    - If CharlesAugustin de Coulomb was alive today how old would he have been
+    - Is it true that Japanese borrowed a considerable number of words
+    - Is it true that provinces have a large degree of autonomy
+    - Did France cede nearly all of its colonies in Europe in 1763
+    - What festival features fireworks  celebrating the end of the school year
+    - Is Amedeo Avogadro Italian
+    - Are Kangaroos Shy
+    - Are ants found in Antartica
+    - Are elephant populations in West Africa generally small and fragmented
+    - Is Dhaka located on the eastern banks of the Buriganga River
+    - In what ways was Adams opposed by Anderw Hamilton
+    - Is the flamenco guitar similar to the classical guitar
+    - Does a large proportion of the population speak Swedish as its mother tongue
+    - He published a collection of what
+    - Was Taipei founded in the 18th century
+    - When did lombardy come under Napoleons rule
+    - Which is the longest river on the earth
+    - What is the largest ethnic minority in Romania
+    - What is the national language of Singapore
+    - Where is Collge des QuatreNations locate
+    - Why does Lewis use absolute case instead of nominative
+    - Has another US President been an Eagle Scout
+    - What may happen to red fire ants if we use boiling water on the queen
+    - Do turtles lay eggs underwater
+    - Was Fillmore the first US President born after the death of a former president
+    - Was Volta taught in public schools
+    - Is Santiago a name in Spanish
+    - Was the Ottoman script replaced with a variant of the Latin alphabet
+    - Do many such drums have six to ten tension rods
+    - What happened in 1896
+    - When did classical Chinese literature begin
+    - How many years ago did CharlesAugustin de Coulomb die
+    - Is a kangaroo a reptile
+    - Which festival is known as the Festival of flowers
+    - Are the Korean names for the language based on the names for Korea used in North as well as South Korea
+    - What fictional stories include a main character named Santiago
+    - What happened in 1894
+    - Is Fillmore the first of two presidents to have been an indentured servant
+    - Who spent the next 10 years painting for Look magazine
+    - What part of an elephant is very important for temperature regulation
+    - Is the violin a percussion instrument
+    - Is french taught in many schools as a primary language along with Arabic
+    - When was Newtons date of birth recorded
+    - Who showed that Avogadros theory held in dilute solutions
+    - Do many players use a smaller mouthpiece on the piccolo trumpet
+    - Whats the population of Kuala lumpur
+    - Is a cougar also known as a mountain lion
+    - Is it true that thermometer had 100 for the freezing point
+    - after the 2008 elections what party had the most parliament seats
+    - Is it true that singapore has several long  standing disputes with malaysia
+    - Is Finnish an official language of the European Union
+    - Are Testudines the crown group of the superorder Chelonia
+    - Do swans feature strongly in mythology
+    - Where do sea turtles lay their eggs
+    - Are adult ducks fast fliers
+    - Did Grant  Perkins not sell harnesses  saddles  and other leather goods and purchase hides from farmers in the prosperous Galena area
+    - Was Becquerel a French physicist
+    - What was the Faraday effect first called
+    - Is Hassaniya Arabic spoken in Mauritania
+    - Have a number of live theatrical plays based on Tesla s life been produced and staged worldwide
+    - Does Londons population draw from a wide range of religions
+    - Why is it beneficial for alpha males and females to forcefully prevent other wolves from mating
+    - Is the word Korean derived from Goryeo
+    - What food gave Isaac Newton clues to his theory of gravity
+    - Do arabs consider literary Arabic
+    - How many nickels are in a dollar
+    - How tall were the tallest prehistoric penguins
+    - Is the trumpet the musical instrument with the highest register in the brass family
+    - Which spice originally attracted Europeans to Indonesia
+    - Wasnt Malay language found in Sumatra
+    - When is the first record of settlement in Singapore
+    - Who was the victor of the War of Currents
+    - About how many people are estimated to live in Nairobi
+    - Was Gellu Naum the leader of the surrealist movement in Romania
+    - What is the earliest historical reference in Europe
+    - What did Clevelands opponents say in 1884 to counter his innocent image
+    - Are nationals referred to by the plural  Liechtensteiners
+    - Name an animal that is growing in number due to recent conservation efforts
+    - Is an elephants skin tough
+    - What are the two subspecies of giant pandas
+    - Is Malay the official language of Iraq
+    - Where did the xylophone originate
+    - Do scholars rank lincoln among the top three presidents
+    - What happened in these positions in english
+    - Was Wilson an automobile enthusiast
+    - Was he professor at Uppsala University
+    - Has Indonesia the world s largest Muslim population
+    - What is a hybrid animal resulting from a union between a leopard and a puma
+    - Which planet is known as the Red Planet
+    - Does Ghana have twice the per capita output of the poorer countries in West Africa
+    - What is the smallest Germanspeaking country in the world
+    - Is it the smallest and highestpitched member of the violin family of string instruments which also includes the viola and cello
+    - What happened in 1785
+    - Oxygen is what
+    - Was The SI  unit  of charge  the  coulomb  named after him
+    - Who is the most popular rock group in Finland
+    - Is the long term viability of the koala therefore threatened by genetic weakness
+    - Has the name Pascal been given to the SI unit of pressure
+    - Is Uruguay the smallest soverign nation in South America
+    - Have penguins an average sense of hearing for birds
+    - Is University of Dhaka the largest public university in Dhaka
+    - How many players are there in a cricket team
+    - Which is the most common non contagious disease in the world
+    - Who heavily influenced the architecture and culture of Montevideo
+    - What is the study of beetles called
+    - Where did Coolidges grandfather had government offices
+    - What is the standardized form of spoken chinese
+    - Who was made to travel outside the coach
+    - What bordered by Saudi
+    - Is Berlin the largest city in Germany
+    - What did Roosevelt do to improve his physical condition
+    - Is Arabic classified alongside Semitic languages
+    - Is the National University of San Marcos in Lima
+    - What is the range of lifespans of the octopus
+    - What does the PRC government classify as literacy amongst workers
+    - Is a guitar an instrument
+    - When did Netwon investigate the refraction of light
+    - Did Woodrow Wilson create the League of Nations
+    - Did Theodore Roosevelt study Judo
+    - Some versions of xylophones have resonators made of what
+    - Is Antwerp a municipality
+    - European books and maps began referring to this region as Canada in what year
+    - Is it a host city for the Formula One World Championship
+    - Is Schloss Charlottenburg the largest existing palace in Berlin
+    - Does Indonesia have the worlds hightest level of biodiversity
+    - How do otters keep themselves warm without blubber
+    - Is the capital city Oslo
+    - Why do wolves howl
+    - Do Koalas have a slow metabolism
+    - Is it true that loschmidt calculated first the value of Avogadro number
+    - What is Amedeo Avogadros last name
+    - The ideas of the Enlightenment shaped the development of what
+    - Is Ghana in Asia
+    - Which two sports events did the Olympiastadion host
+    - What arrived in Britain
+    - Did Jayawikartas soldiers attack the Dutch fortress
+    - What happened to Copenhagen between 1251 and 1255
+    - Is London the capital of the United Kingdom
+    - When was Michael Faraday born
+    - Had the drums been used in Sri Lanka since Before Christ
+    - What kind of ducks feed on land
+    - When was the Turkish Language Association founded
+    - Is the Celsius crater on the Moon named after him
+    - Name a turtle popularly kept as a pet
+    - What happens if a wing is removed
+    - What is a colectivo
+    - What are a pianos keys generally made of
+    - Has Sang Nila Utama visited Singapore
+    - Is the kangaroo an herbivour
+    - When was the 7th symphony premiered
+    - What percentage of the Korean language does Jeong Jaedo estimate to be SinoKorean
+    - Do beetles antennae function primarily as organs of smell
+    - Why did Bequerel win the Nobel Prize in Physics
+    - What was James Watts fathers job
+    - Did Vietnamese come to predominate politically in 2nd century BC
+    - Is Canadas official language Zulu
+    - is it home to the parliament of malaysia
+    - When were the colonial buildings in Kuala Lumpur constructed
+    - How long may elephants live
+    - Arent drums often used in music therapy
+    - Is mandarin spoken Chinese distinguished by its high level
+    - Is catalan the only  official  language  of Andorra
+    - Does Swahili have dipthongs
+    - Did Wilsons father own slaves
+    - Was Grover Cleveland born in New York
+    - Is a beetles general anatomy uniform
+    - Where is there a Newton statue on display
+    - How many people use the bus network daily
+    - Is it widely considered the most secular nation in Latin America
+    - Which is the biggest desert in the world
+    - Are penguins afraid of humans
+    - Is Finnish threatened by English
+    - How many laws of motion did Netwon have
+    - Where are lobsters found
+    - How many species of African elephants have been proposed
+    - Does the city and its surrounding area also form the Nairobi Province
+    - Did the Japanese invasion and subsequent occupation during WWII end Dutch rule
+    - Who were the midnight judges
+    - Did he not determine the dependence of the boiling of water with atmospheric pressure LRB in excellent agreement with modern data RRB
+    - Did Mainland Nova Scotia not come under British rule with the Treaty of Utrecht-
+    - How many teeth does a healthy adult have including the wisdom teeth
+    - Where is Jakarta located
+    - Is Malay spoken as local dialect of ethnic Malays
+    - What can be augmented with a fourth valve
+    - Are Indian concert flutes available in standard pitches
+    - Did Avogadro live in England
+    - Is the dialect spoken in Jeju located in fact classified as a different language by all Korean linguists
+    - Was Tesla an American citizen
+    - Which are the vowels in the English alphabet
+    - How many days are there in the month of February in a leap year
+    - Is the most common type of trumpet the B trumpet
+    - The State Court rules what
+    - James Watt ranked first among how many people in Charles Murrays survey of historiometry
+    - Is he widely considered to be one of the greatest painters of all time and perhaps the most diversely talented person ever to have lived
+    - Are sports in Indonesia generally maleorientated and spectator sports are often associated with illegal gambling
+    - Is University of Dhaka older than the Dhaka College
+    - Are penguins at risk
+    - What happened in recent years
+    - Do picks come in many shapes and sizes
+    - Was CharlesAugustin de Coulombs fathers family in Montpellier
+    - Is Liechtenstein bordered by Switzerland
+    - Who died in 1832
+    - Did he become chief engineer in the Department of Bridges and Highways
+    - What is Monroes fathers name
+    - Does the Order Testudines not include both extant LRB living RRB and extinct species  the earliest known turtles being from around 215 million years ago
+    - Was the University of San Fransisco founded in 1855
+    - Does a male leopard weigh more than a female leopard
+    - Where does the name of the city Jakarta come from
+    - Was King Victor Emmanuel III there to pay homage to Avogadro
+    - Who did James Monroe marry
+    - When did the first verifiable written documents appear
+    - Is it often called just Petersburg RRB and is informally known as Piter RRB
+    - What is Anders Celsiuss last name
+    - Could Malay have originated from Sumatra island
+    - Is there a more industrialized region in malaysia
+    - How long are cougar adult males from nose to tail
+    - Is Romania a semipresidential unitary state
+    - Who painted the Mona Lisa
+    - Is Golden Gate Park the largest city park
+    - The SI unit of charge the coulomb was named after him
+    - What foods do pandas eat
+    - What is cause of polar bears skin diseases
+    - What happened in 1838
+    - When was James Monroe elected president
+    - What is along the citys western border
+    - 20415244032041530070 lunchbox or boxed lunch from bento and 2600929702 prepared cuisine are loan words from which l
+    - Do openended flutes have brighter timbres
+    - What are the three sections of a beetle
+    - Do butterflies carry more pollen than Hymenoptera
+    - In Old French was the plural  for animal animals
+    - Is one of the best known Impressionist works Renoirs 1876 Dance at Le Moulin de la Galette
+    - Is it characterized by large multifaceted eyes two pairs of strong transparent wings and an elongated body
+    - Does Egypt have political influence in the Middle East
+    - What is also the distance that Antarctic tourists are told to keep from penguins
+    - Did the predecessors to trumpets have valves
+    - What makes a trumpet fully chromatic
+    - Why do trumpets have a bright loud sound
+    - When did he become a professor
+    - Who also discovered that less than three percent of kangaroos exposed to the virus developed blindness
+    - Different species of kangaroos eat what
+    - Have Kangaroos dazzled by headlights or startled by engine noise been known to leap in front of cars
+    - Is a collision with a vehicle capable of killing a kangaroo
+    - Was the game of Marn grook played using a ball made from kangaroo by the Kurnai people
+    - Have kangaroos large  powerful hind legs  large feet adapted for leaping  a long muscular tail for balance  and a small head
+    - Is a kangaroo a marsupial from the family macropodidae LRB macropods  meaning   large foot   RRB
+    - What kinds of changes have larger kangaroos adapted much better to
+    - Have larger kangaroos adapted much better to changes
+    - Is the leopard smaller than the other members of Panthera
+    - Is the leopard smaller than the other members of Panthera
+    - Is a leopard larger and less lanky than a cheetah
+    - Is a leopard larger and less lanky than a cheetah
+    - Are large pythons potential prey for leopards
+    - Are large pythons potential prey for leopards
+    - What may a leopard be mistaken for
+    - What may a leopard be mistaken for
+    - What is a hybrid animal resulting from a union between a leopard and a puma
+    - What is a hybrid animal resulting from a union between a leopard and a puma
+    - Where do leopards often hide their kills
+    - Where do leopards often hide their kills
+    - How did early naturalists distinguish between leopards and panthers
+    - How did early naturalists distinguish between leopards and panthers
+    - What are dark leopards known as colloquially
+    - What are dark leopards known as colloquially
+    - What shape are a leopards black rosettes in East Africa
+    - What shape are a leopards black rosettes in East Africa
+    - Is the leopard an Old World mammal
+    - Is the leopard an Old World mammal
+    - Is the leopard an Old World mammal
+    - Is the leopard of the Felidae family
+    - Is the leopard of the Felidae family
+    - Is the leopard one of the four big cats
+    - Is the leopard one of the four big cats
+    - Where is the leopard distributed
+    - Where is the leopard distributed
+    - How long is a leopards tail
+    - How long is a leopards tail
+    - How much does a leopard weigh
+    - How much does a leopard weigh
+    - Does a male leopard weigh more than a female leopard
+    - Does a male leopard weigh more than a female leopard
+    - What is the difference between leopards and cheetahs
+    - What is the difference between leopards and cheetahs
+    - How does the distribution size of the leopard compare to the distribution of other wild cats
+    - How does the distribution size of the leopard compare to the distribution of other wild cats
+    - What resembles that of the similarlysized cougar in the Americas
+    - What was one of the many species described in Linnaeuss 18thcentury work Systema Naturae
+    - What sort of cats are solitary
+    - Are leopards circular
+    - Is the leopard solitary
+    - What centred in Sierra
+    - Felis pardus was what
+    - Has the New Zealand Rugby League featured the Otahuhu Leopards and then the Tamaki Leopards
+    - Were the Leopard men a West African secret society who practised cannibalism
+    - Was the leopard tank a German designed tank which entered service in 1965
+    - Is the black color heritable and caused by only one recessive gene locus
+    - Is the leopard LRB panthera pardus RRB an old world mammal of the felidae family and the smallest of the four   big cats   of the genus panthera  along with the tiger  lion  and jaguar
+    - Can a panther be any of several species of large felid
+    - Is the leopard an agile and graceful predator
+    - Is Liechtenstein bordered by Switzerland
+    - Is Liechtenstein bordered by Switzerland
+    - Is Liechtenstein the smallest Germanspeaking country in the world
+    - Is Liechtenstein the smallest Germanspeaking country in the world
+    - Was Liechtenstein part of the ancient Roman province of Raetia
+    - Was Liechtenstein part of the ancient Roman province of Raetia
+    - When was the first factory opened
+    - When was the first factory opened
+    - How many municipalities is Liechtenstein divided into
+    - How many municipalities is Liechtenstein divided into
+    - What is the national currency of Liechtenstein
+    - What is the national currency of Liechtenstein
+    - Has Leichtenstein worked to promote the countys image by prosecuting international moneylaundering
+    - What company administers Leichtensteins railways
+    - What company administers Leichtensteins railways
+    - What percentage of Liechtensteins population is foreignborn
+    - What percentage of Liechtensteins population is foreignborn
+    - Is there an airport in Liechtenstein
+    - Is there an airport in Liechtenstein
+    - Is Liechtenstein heavily urbanized
+    - Is Liechtenstein heavily urbanized
+    - Is Liechtenstein doubly landlocked
+    - Is Liechtenstein doubly landlocked
+    - Does Liechtenstein have an army
+    - Does Liechtenstein have an army
+    - When was Liechtensteins current constitution adopted
+    - When was Liechtensteins current constitution adopted
+    - What is the official language of Liechtenstein
+    - What is the official language of Liechtenstein
+    - What countries border Liechtenstein
+    - What countries border Liechtenstein
+    - What Roman province was Liechtenstein part of
+    - What Roman province was Liechtenstein part of
+    - How many municipalities are within Oberland
+    - How many municipalities are within Oberland
+    - What is the smallest Germanspeaking country in the world
+    - The Savings and Loans Bank was founded as was the first cottonweaving mill in what year
+    - What enjoys one of the worlds highest standards of living
+    - Does the state court rule on the conformity of laws
+    - What do most recognizable international company and largest employer have in common
+    - Is Liechtenstein heavily urbanized
+    - Was Liechtenstein completed in November 2000
+    - What completed in November
+    - The State Court rules what
+    - The Historical Society of the Principality of Liechtenstein plays what
+    - Is the museum collection also the national art collection of Liechtenstein
+    - Is there a small heliport at Balzers in Liechtenstein available for charter helicopter flights
+    - Are nationals referred to by the plural  Liechtensteiners
+    - Is it a winter sports resort  although it is perhaps best known as a tax haven
+    - Is it a winter sports resort
+    - Is it the smallest germanspeaking country in the world
+    - What happened in moravia  lower austria  silesia  and styria  though in all cases  these territories were held in fief under other more senior feudal lords
+    - Did Webster write I can now sleep of nights
+    - Did Webster write I can now sleep of nights
+    - Was the arrival of Louis Kossuth exiled leader of a failed Hungarian revolution another issue that presented itself during Fillmores presidency
+    - Was the arrival of Louis Kossuth exiled leader of a failed Hungarian revolution another issue that presented itself during Fillmores presidency
+    - Did he die at 1110 pm on March 8 1874 of the aftereffects of a stroke
+    - Did he die at 1110 pm on March 8 1874 of the aftereffects of a stroke
+    - Who got Seward elected to the senate
+    - Who got Seward elected to the senate
+    - Where was Commodore Matthew C Perry sent to open Japan to Western trade
+    - Where was Commodore Matthew C Perry sent to open Japan to Western trade
+    - What is The Remarkable Millard Fillmore
+    - What is The Remarkable Millard Fillmore
+    - Did Fillmore form a law partnership before or after he founded the private University of Buffalo
+    - Did Fillmore form a law partnership before or after he founded the private University of Buffalo
+    - Did Fillmore run for President a second time
+    - Did Fillmore run for President a second time
+    - How long after the death of his first wife did Fillmore marry Caroline McIntosh
+    - Was Millard Fillmore the thirteenth President of the United States
+    - Was Millard Fillmore the thirteenth President of the United States
+    - Was Millard Fillmore born on January 7 1800
+    - Was Millard Fillmore born on January 7 1800
+    - Did Millard Fillmore die on March 8 1974
+    - Did Millard Fillmore die on March 8 1974
+    - Where was Millard Fillmore born
+    - Where was Millard Fillmore born
+    - To whom was Millard Fillmore born to
+    - To whom was Millard Fillmore born to
+    - Who did Millard Fillmore fall in love with
+    - Who did Millard Fillmore fall in love with
+    - What did Taylor and Fillmore disagree upon
+    - What did Taylor and Fillmore disagree upon
+    - How did Fillmore ascend to the presidency
+    - How did Fillmore ascend to the presidency
+    - How did the supporters of Henry Clay feel about Fillmore in 1848
+    - How did the supporters of Henry Clay feel about Fillmore in 1848
+    - Who was first apprenticed to a fuller to learn the clothmaking trade
+    - He founded the private university of buffalo on what date
+    - Who or what fell in love with abigail powers
+    - Was Fillmore one of the founders of the University of Buffalo
+    - Was Another primary objective of Fillmore to preserve the Union from the intensifying slavery debate
+    - Was Fillmore the second Chancellor a position he maintained while both Vice President and President
+    - Is Fillmore the first of two presidents to have been an indentured servant
+    - Is the comic strip Mallard Fillmore named after the president
+    - Was Fillmore the first US President born after the death of a former president
+    - Did Fillmore not turn down the honor  explaining that he had neither the  literary nor scientific attainment  to justify the degree
+    - What happened in a log cabin in summerhill  new york
+    - Who was born precisely at midnight during an electrical storm  to a Serbian family in the village of Smiljan near Gospi  in the Lika region of the Croatian Krajina in Military Frontier  part of the Austrian Empire   in the presentday Croatia
+    - Are there at least two films describing Tesla s life
+    - Have a number of live theatrical plays based on Tesla s life been produced and staged worldwide
+    - Do sea otters have long muscular tails
+    - Do sea otters have long muscular tails
+    - Can otters survive in cold water
+    - Can otters survive in cold water
+    - Does the giant otter inhabit South Africa
+    - Does the giant otter inhabit South Africa
+    - How many species of otter are there
+    - How many species of otter are there
+    - What do river otters eat
+    - What do river otters eat
+    - How much do sea otters weigh
+    - How much do sea otters weigh
+    - How do sea otters insulate themselves
+    - How do sea otters insulate themselves
+    - Why are sea otters nearly extinct
+    - Why are sea otters nearly extinct
+    - What is one of the challenges of reestablishing a population of Eurasian otters in the UK
+    - What is one of the challenges of reestablishing a population of Eurasian otters in the UK
+    - Is otter a kind of mammal
+    - Is otter a kind of mammal
+    - How many species and genera does otter have
+    - How many species and genera does otter have
+    - Do otters live in water
+    - Do otters live in water
+    - What do river otters eat
+    - What do river otters eat
+    - Where do sea otters live
+    - Where do sea otters live
+    - Where does the word otter derive from
+    - Where does the word otter derive from
+    - Does otter give birth or lay egg
+    - What drives sea otter almost to extinction
+    - What drives sea otter almost to extinction
+    - Why otters are considered as totem animals
+    - Do sea otters live along the Pacific coast
+    - Do sea otters live along the Pacific coast
+    - Are otters totem animals
+    - Are otters herbivores
+    - Are otters herbivores
+    - What is the primary item in an otters diet
+    - What is the primary item in an otters diet
+    - What is an otters den called
+    - What is an otters den called
+    - Why is the giant otter becoming increasingly rare
+    - Why is the giant otter becoming increasingly rare
+    - How do otters keep themselves warm without blubber
+    - How do otters keep themselves warm without blubber
+    - How are otters playful animals
+    - How are otters playful animals
+    - What animals are related to otters
+    - What traps a layer of air and keeps them dry and warm under water
+    - The collective noun romp is sometimes used for a group of what
+    - Is it true that otters eat a variety of fish
+    - Are otters playful animals
+    - Are otters very active
+    - Are male otters dogotters
+    - An otter s den is what
+    - Sea otters eat what
+    - Is the myth of Otter s Ransom the starting point of the Volsunga saga
+    - Are Male otters dogotters  females are bitches and babies are cubs or pups
+    - Is an otter s den called a holt
+    - Have most otters fish as the primary item in their diet  supplemented by frogs  crayfish and crabs
+    - Do penguins feed on krill
+    - Do penguins feed on krill
+    - What is the largest living species of penguin
+    - What is the largest living species of penguin
+    - Do penguins live almost exclusively in the Southern Hemisphere
+    - Do penguins live almost exclusively in the Southern Hemisphere
+    - What is tobogganing
+    - What is tobogganing
+    - Why are penguins countershaded
+    - Why are penguins countershaded
+    - Are penguins afraid of humans
+    - Are penguins afraid of humans
+    - How much time to penguins spend on land
+    - How much time to penguins spend on land
+    - How many species of penguins are there
+    - How many species of penguins are there
+    - How are Isabelline penguins different from most penguins
+    - How are Isabelline penguins different from most penguins
+    - Are penguins birds
+    - Are penguins birds
+    - Do penguins have a better than average sense of hearing for birds
+    - Do penguins have a better than average sense of hearing for birds
+    - Are penguins considered higher waterbirds
+    - Are penguins considered higher waterbirds
+    - What order do penguins belong to
+    - What order do penguins belong to
+    - What is the largest living species of penguin
+    - What is the largest living species of penguin
+    - How tall were the tallest prehistoric penguins
+    - How tall were the tallest prehistoric penguins
+    - What makes penguins so agile in the water
+    - What makes penguins so agile in the water
+    - Why do penguins tobaggan
+    - Why do penguins tobaggan
+    - Who spend half of their life on land and half in the oceans
+    - What is also the distance that Antarctic tourists are told to keep from penguins
+    - What have become flippers useless for flight in the air
+    - What happens when mothers lose a chick
+    - Is it true that each penguin gets a turn in the center
+    - Are all penguins countershaded
+    - Are penguins astonishingly agile
+    - Are penguins at risk
+    - Is it also possible that penguin comes from the Latin pinguis  fat
+    - Have penguins an average sense of hearing for birds
+    - Can larger penguins dive deep in case of need
+    - Is the smallest penguin species the Little Blue Penguin LRB also known as the Fairy Penguin RRB  which stands around 40 cm tall LRB 16 in RRB and weighs 1 kg LRB 22 lb RRB
+    - Is it not even known whether the gigantic palaeeudyptines constitute a monophyletic lineage  or whether gigantism was evolved independently in a much restricted Palaeeudyptinae and the Anthropornithinae
+    - Is the largest living species the emperor penguin LRB aptenodytes forsteri RRB
+    - Is the smallest penguin species the little blue penguin LRB also known as the fairy penguin RRB  which stands around 40 cm tall LRB 16 in RRB and weighs 1 kg LRB 2
+    - What happened in a region not quite 2000 km south of the equator 35 mya
+    - What is the last word on the page
+    - What is the last word on the page
+    - Is polar bear a mammal
+    - Is polar bear a mammal
+    - Is polar bear a carnivore
+    - Is polar bear a carnivore
+    - What is largest polar bear on record
+    - What is largest polar bear on record
+    - What is polar bears skin color
+    - What is polar bears skin color
+    - How long is polar bears guard hair
+    - How long is polar bears guard hair
+    - What is cause of polar bears skin diseases
+    - What is cause of polar bears skin diseases
+    - Why polar bear is a special species
+    - What do fossil and DNA evidence tell us
+    - What do fossil and DNA evidence tell us
+    - Does a polar bear live in the Arctic
+    - Does a polar bear live in the Arctic
+    - Is a polar bear white in color
+    - Is a polar bear white in color
+    - Is a polar bear at high risk of extinction
+    - Is a polar bear at high risk of extinction
+    - How heavy is a male polar bear
+    - How heavy is a male polar bear
+    - How heavy was the largest polar bear on record
+    - How heavy was the largest polar bear on record
+    - What does a polar bears fur provide
+    - What does a polar bears fur provide
+    - Do female polar bears weight more than the male
+    - Do female polar bears weight more than the male
+    - How much weight do female polar bears gain during pregnancy
+    - How much weight do female polar bears gain during pregnancy
+    - Can polar bears be seen under infrared photography
+    - Can polar bears be seen under infrared photography
+    - What is actually black in color
+    - What insulate it against the cold
+    - What includes a lengthy justification of why this species is listed as vulnerable
+    - What do with greenpeace and the natural resources defense council have in common
+    - Are studies insufficient evidence for global protection
+    - Are polar bears excellent swimmers
+    - A semiaquatic marine mammal  the polar bear has what
+    - Garbage is what
+    - The bears sometimes what
+    - Is the Polar Bear the mascot of Bowdoin college
+    - Have thumbpolar bears been made both controversial and famous for their distinctive white fur and their habitat
+    - Did Mitchell Taylor  the Nunavut Government Manager of Wildlife Research  not write a letter to the US Fish and Wildlife Service arguing that local studies are insufficient evidence for global protection at this time
+    - Are Cubs born in December without awakening the mother
+    - Does Qatar rank as the eighth richest country in the world per capita
+    - Does Qatar rank as the eighth richest country in the world per capita
+    - Do nearly all Qataris profess Islam
+    - Do nearly all Qataris profess Islam
+    - Can women legally drive in Qatar
+    - Can women legally drive in Qatar
+    - When did Qatar become an independent state
+    - When did Qatar become an independent state
+    - Where is Qatars telecommunication system centered
+    - Where is Qatars telecommunication system centered
+    - Where did a suicidebombing kill a teacher in 2005
+    - Where did a suicidebombing kill a teacher in 2005
+    - Does the native pronunciation of Qatar sound like cutter
+    - Does the native pronunciation of Qatar sound like cutter
+    - What is the Arabic word for municipalities
+    - What is the Arabic word for municipalities
+    - What universities are in Education City
+    - What universities are in Education City
+    - What carried with it a tacit recognition of Qatars status as distinct from Bahrain
+    - Qatar became an independent sovereign state in what year
+    - What consists of a low barren plain covered with sand
+    - How do qatar and the wider region relate
+    - Was Qatar University founded in 1973
+    - Is Qatar bordered by Saudi Arabia to the south
+    - What bordered by Saudi
+    - Who served as the headquarters and one of the main launching sites of the US invasion of Iraq in 2003
+    - Has Qatar a modern Telecommunication system centered in Doha
+    - Was Qatar University founded in 1973
+    - Did the Qataris not choose as their negotiator the respected entrepreneur and longtime resident of Doha  Muhammed bin Thani
+    - Will oil and gas probably remain the backbone of Qatar s economy for some time to come
+    - Has it been created with a long term perspective to support the development of Qatar and the wider region  develop local and regional markets  and strengthen the links between the energy based economies and global financial markets
+    - What happened in these positions in english
+    - Can these allophones not occur in these positions in english
+    - Is RRB  officially the state of qatar LRB arabic   transliterated as dawlat qatar RRB  an arab emirate in southwest asia
+    - Does Romania border Hungary
+    - Does Romania border Hungary
+    - Is Romania a secular state
+    - Is Romania a secular state
+    - Is the president elected by popular vote
+    - Is the president elected by popular vote
+    - How many counties is Romania divided into
+    - How many counties is Romania divided into
+    - What is the highest mountain in Romania
+    - What is the highest mountain in Romania
+    - What is the official language of Romania
+    - What is the official language of Romania
+    - Is the Romanian economy doing well
+    - Are there many Roma in Romania
+    - Are there many Roma in Romania
+    - How many territories joined to form Romania
+    - How many territories joined to form Romania
+    - Does Romania share a border with Ukraine
+    - Does Romania share a border with Ukraine
+    - Did Romania declare neutrality during World War I
+    - Did Romania declare neutrality during World War I
+    - Does Romania share the same language with Moldova
+    - Does Romania share the same language with Moldova
+    - Who was the first gymnast to score a perfect ten
+    - Who was the first gymnast to score a perfect ten
+    - What is the largest city in Romania
+    - What is the largest city in Romania
+    - What is the largest ethnic minority in Romania
+    - What is the largest ethnic minority in Romania
+    - How many countries in Europe are bigger than Romania
+    - How many countries in Europe are bigger than Romania
+    - Why doesnt Romania have a state religion
+    - Why wasnt Romania neutral during World War II
+    - Why wasnt Romania neutral during World War II
+    - Sibiu a large city in Transylvania was chosen as European Capital of Culture in what year
+    - What are approximately 42000 years old and have been nicknamed John of Anina
+    - Is it true that romania has a population of 21698181
+    - What do economy and law have in common
+    - What did Tourism in Romania attract in 2005
+    - Is Romania a secular state
+    - Is Romania a semipresidential unitary state
+    - Is Romania a semipresidential democratic republic where executive functions are shared between the president and the prime minister
+    - Was Gellu Naum the leader of the surrealist movement in Romania
+    - Was the Bucharest Metro only opened in 1979
+    - Is romania LRB  RRB a country in southeastern europe
+    - Is romania a semipresidential unitary state
+    - Do singaporeans enjoy squid
+    - Do singaporeans enjoy squid
+    - Did Singapores standard of living decrease since independence
+    - Did Singapores standard of living decrease since independence
+    - Did the media contribute 156 to Singapores GDP in 2001
+    - Did the media contribute 156 to Singapores GDP in 2001
+    - How many people use the bus network daily
+    - How many people use the bus network daily
+    - Where did Orang Laut people live
+    - Where did Orang Laut people live
+    - What is the MRT
+    - What is the MRT
+    - How is Singapores climate characterized
+    - How is Singapores climate characterized
+    - How much increase in the medias contribution to GDP is the government seeking
+    - How much increase in the medias contribution to GDP is the government seeking
+    - How many days did it take the Imperial Japanese Army to win the Battle of Singapore
+    - How many days did it take the Imperial Japanese Army to win the Battle of Singapore
+    - Is Singapore located at the southern tip of the Korean Penisula
+    - Is Singapore located at the southern tip of the Korean Penisula
+    - Is Singapore a citystate
+    - Is Singapore a citystate
+    - Has Sang Nila Utama visited Singapore
+    - Has Sang Nila Utama visited Singapore
+    - What does singa mean
+    - When is the first record of settlement in Singapore
+    - When is the first record of settlement in Singapore
+    - Which nation invaded Singapore during World War II
+    - Which nation invaded Singapore during World War II
+    - Why Churchill called the occupation of Singapor by Janpan during WWII Britains greatest defeat
+    - Was Lee Kuan Yew a successful leader of Singapore
+    - Was Lee Kuan Yew a successful leader of Singapore
+    - When did Goh Chok Tong succeed Lee as Prime Minister
+    - What is the primary domestic source of water supply
+    - What is the national language of Singapore
+    - Where is the National Orchid Garden
+    - Why are relations with Malaysia and Indonesia important
+    - What is the most densely populated independent country in the world
+    - Who did Sir Thomas Stamford Raffles work for
+    - When was Lee Kuan Yew prime minister of Singapore
+    - What is the punishment for firstdegree murder
+    - What established a trading post on the island in 1819
+    - What used Singapore as a strategic trading post along the spice route
+    - What became one of the most important commercial and military centres of the British Empire
+    - Who boasted a sizeable community of 100000 by 1869
+    - How do reservoirs and water relate
+    - Is it true that singapore has several long  standing disputes with malaysia
+    - Has Singapore Changi Airport a network of 81 airlines connecting Singapore to 185 cities in 58 countries
+    - Has Singapore a network of reservoirs and water catchment areas
+    - Has Urbanization eliminated many areas of former primary rainforest  with the only remaining area of primary rainforest being Bukit Timah Nature Reserve
+    - Does the economy not depend heavily on exports refining imported goods  especially in manufacturing
+    - Is singapore LRB     RRB  officially the republic of singapore LRB     RRB  an island nation located at the southern tip of the malay peninsula
+    - Is singapore the 17th wealthiest country in the world in terms of gdp per capita
+    - Was Thedore Roosevelt  a member of the Republican Party
+    - Was Thedore Roosevelt  a member of the Republican Party
+    - Does Theodore Roosevelt have a brother
+    - Does Theodore Roosevelt have a brother
+    - Did Theodore Roosevelt go to Harvard
+    - Did Theodore Roosevelt go to Harvard
+    - Where was Theodore Roosevelt born
+    - Where was Theodore Roosevelt born
+    - What did Roosevelt do to improve his physical condition
+    - What did Roosevelt do to improve his physical condition
+    - Why did Roosevelt start Boxing lessons
+    - Why did Roosevelt start Boxing lessons
+    - What was the nickname of Theodore Roosevelts sister Anna
+    - What was the nickname of Theodore Roosevelts sister Anna
+    - What was Roosevelts justification for supporting desegregation of schools in New York
+    - What was Roosevelts justification for supporting desegregation of schools in New York
+    - How did newspapers respond to Roosevelt inviting Brooker T Washington to dinner at the White House
+    - How did newspapers respond to Roosevelt inviting Brooker T Washington to dinner at the White House
+    - Did Theodore Roosevelt study Judo
+    - Did Theodore Roosevelt study Judo
+    - Did Roosevelt receive a Medal of Honor
+    - Did Roosevelt receive a Medal of Honor
+    - Did Roosevelt study biology
+    - Did Roosevelt study biology
+    - Where was Theodore Roosevelt from
+    - Where was Theodore Roosevelt from
+    - Who was Roosevelts presidential hero
+    - Who was Roosevelts presidential hero
+    - When did Roosevelt die
+    - When did Roosevelt die
+    - Who helped to fund Roosevelts African safari
+    - Who helped to fund Roosevelts African safari
+    - Did Roosevelt support racial integration in schools
+    - Did Roosevelt support racial integration in schools
+    - Was Roosevelts family rich
+    - Are turtles ectothermic
+    - Are turtles ectothermic
+    - Does the mother care for the young
+    - Does the mother care for the young
+    - Are turtles pets
+    - Are turtles pets
+    - What shape are the eggs of the larest species of turtle
+    - What shape are the eggs of the larest species of turtle
+    - How often do turtles breed
+    - What do all turtles and tortoises breathe
+    - What do all turtles and tortoises breathe
+    - How do turtles reproduce
+    - How do turtles reproduce
+    - What has been discovered about turtles organs
+    - What has been discovered about turtles organs
+    - What suborder of turtle draws its head into its shell
+    - What suborder of turtle draws its head into its shell
+    - Do sea turtles lay eggs on dry sandy beaches
+    - Do sea turtles lay eggs on dry sandy beaches
+    - Are Pleurodira known as sidenecked turtles
+    - Are Pleurodira known as sidenecked turtles
+    - Are turtles a part of the Flying Spaghetti Monster
+    - How many suborders are turtles divided into
+    - How many suborders are turtles divided into
+    - Name a turtle popularly kept as a pet
+    - Name a turtle popularly kept as a pet
+    - Name four related articles for the article on turtles
+    - Name four related articles for the article on turtles
+    - If a turtle egg was kept warm what would likely hatch
+    - If a turtle egg was kept warm what would likely hatch
+    - What do turles use to breathe in the water
+    - Why are sidenecked turtles called sidenecked turtles
+    - Why are sidenecked turtles called sidenecked turtles
+    - Do turtles lay eggs underwater
+    - Do turtles lay eggs underwater
+    - Are turtle eggs leathery and soft
+    - Are turtle eggs leathery and soft
+    - Are turtles being examined for longevity genes
+    - Are turtles being examined for longevity genes
+    - What suborder of turtles is extinct
+    - What suborder of turtles is extinct
+    - What do turtle eggs preared to eat consist mainly of
+    - Where do sea turtles lay their eggs
+    - Where do sea turtles lay their eggs
+    - What is the smallest suborder of turtles
+    - What is the smallest suborder of turtles
+    - What are turtle eggs covered in when they incubate
+    - What are turtle eggs covered in when they incubate
+    - What type of creatures breathe air and dont lay eggs underwater
+    - What type of creatures breathe air and dont lay eggs underwater
+    - What are deposited in holes dug into mud or sand
+    - What sort of turtles are ectothermic
+    - Are turtles ectothermic
+    - Are the largest turtles aquatic
+    - Is aquatic respiration in Australian freshwater turtles being studied
+    - These projections  called papillae  have what
+    - The eggs of the largest species are what
+    - Has this inspired genetic researchers to begin examining the turtle genome for longevity genes
+    - Can turtles take many years to reach breeding age
+    - Are Immature sea turtles not cared for by the adults
+    - Are the Pleurodira sometimes known as the sidenecked turtles  a reference to the way they withdraw their heads into their shells
+    - Does the Order Testudines not include both extant LRB living RRB and extinct species  the earliest known turtles being from around 215 million years ago
+    - Was Ulysses Grant a general in the American Civil War
+    - Was Ulysses Grant a general in the American Civil War
+    - Was Grants fatherinlaw a Democrat
+    - Was Grants fatherinlaw a Democrat
+    - Did Ulysses win the Battle of Champion Hill
+    - Did Ulysses win the Battle of Champion Hill
+    - Who was Grants brother in law
+    - Who was Grants brother in law
+    - Where was Grant born
+    - Where was Grant born
+    - What was Grants political affiliation
+    - What was Grants political affiliation
+    - Why did Grant say Damn I had nothing to do with this batte
+    - Why did Grant say Damn I had nothing to do with this batte
+    - Did Horace Greenley lose in the presidential elections of 1872
+    - Did Horace Greenley lose in the presidential elections of 1872
+    - Why did Grant think that war was unjust
+    - Why did Grant think that war was unjust
+    - Who achieved international fame as the leading Union general in the American Civil War
+    - Grant was elected president as a Republican in what year
+    - Who took a hard line that reduced violence by groups like the Ku Klux Klan
+    - When did he vote for democrat james buchanan
+    - Who did President Lincoln promote of major general in the regular army effective July 4
+    - Was Grant elected president as a Republican
+    - What was from Pennsylvania
+    - Was it a twosentence description that completely caught the essence of Ulysses S Grant
+    - Was Grant s favorite brand of bourbon whiskey Old Crow
+    - Had he smoked only sporadically
+    - Did Grant  Perkins not sell harnesses  saddles  and other leather goods and purchase hides from farmers in the prosperous Galena area
+    - Is the famous dragon gate at the entrance to the district at the corner of Grant and Bush Street
+    - What happened in 1865
+    - What happened in recent years
+    - Is Uruguay located in the northwesten part of Africa
+    - Is Uruguay located in the northwesten part of Africa
+    - Is Uruguays capital Montevideo
+    - Is Uruguays capital Montevideo
+    - Does Uruguay have cold summers
+    - Does Uruguay have cold summers
+    - Who founded Montevideo
+    - Who founded Montevideo
+    - Where is Uruguays oldest church
+    - Where is Uruguays oldest church
+    - Who heavily influenced the architecture and culture of Montevideo
+    - Who heavily influenced the architecture and culture of Montevideo
+    - What are poor neighborhoods called informally
+    - What are poor neighborhoods called informally
+    - Is uruguays landscape mountainous
+    - Is uruguays landscape mountainous
+    - What religion do most Uruguayans profess
+    - What religion do most Uruguayans profess
+    - Is Uruguay located in South America
+    - Is Uruguay located in South America
+    - Can citizens propose changes to the Constitution
+    - Can citizens propose changes to the Constitution
+    - Did Uruguay host the first ever World Cup
+    - Did Uruguay host the first ever World Cup
+    - Who founded Montevideo
+    - Who founded Montevideo
+    - How many square kilometres of continental land is Uruguay
+    - How many square kilometres of continental land is Uruguay
+    - How much of the population is of white European descent
+    - How much of the population is of white European descent
+    - Why was the capital of Uruguay founded
+    - Why was the capital of Uruguay founded
+    - How many times has Uruguay won the World Cup
+    - How many times has Uruguay won the World Cup
+    - How much is the average income of an African woman compared to a European man
+    - Does Uruguay recognize samesex civil unions
+    - Does Uruguay recognize samesex civil unions
+    - Does Uruguay border French Guiana
+    - Does Uruguay border French Guiana
+    - Is Uruguays warmest month June
+    - Is Uruguays warmest month June
+    - What does a citizen use to propose changes to the Constitution
+    - What does a citizen use to propose changes to the Constitution
+    - Where is Uruguays oldest church
+    - Where is Uruguays oldest church
+    - What religions are found in Uruguay
+    - What religions are found in Uruguay
+    - What has Uruguay done to be competitive in agriculture
+    - What has Uruguay done to be competitive in agriculture
+    - What are the names of Uruguays political parties
+    - What are the names of Uruguays political parties
+    - Is Uruguay the smallest soverign nation in South America
+    - Is Uruguay the smallest soverign nation in South America
+    - What was founded by the Spanish in the early 18th century as a military stronghold
+    - What has many possible meanings
+    - How do india and latin america relate
+    - What did Uruguay win in 1828
+    - Is Uruguay very common
+    - Is The climate in Uruguay temperate
+    - Is the main sport in Uruguay football
+    - Is Uruguay s oldest church in San Carlos  Maldonado
+    - Is Uruguay a member of the Cairns Group of exporters of agricultural products
+    - Is it widely considered the most secular nation in Latin America
+    - Is it the second smallest independent country in south america  larger only than suriname and the french overseas department of french guiana
+    - Is it a constitutional democracy  where the president fulfills the roles of both head of state and head of government
+    - Was Woodrow Wilson the thirtieth President of the United States
+    - Was Woodrow Wilson the thirtieth President of the United States
+    - Did Woodrow Wilson create the League of Nations
+    - Did Woodrow Wilson create the League of Nations
+    - Did the US join the League of Nations
+    - Did the US join the League of Nations
+    - Where was the League of Nations created
+    - Where was the League of Nations created
+    - When was Woodrow Wilson born
+    - When was Woodrow Wilson born
+    - Who was President when Wilson finished Congressional Government
+    - Who was President when Wilson finished Congressional Government
+    - What field did Woodrow Wilson leave law practice to study
+    - What field did Woodrow Wilson leave law practice to study
+    - What caused Wilson to ask Congress to declare war on the Central Powers
+    - What caused Wilson to ask Congress to declare war on the Central Powers
+    - What was more damaging than moving students into colleges
+    - Was Wilson a member of the Phi Kappa Psi fraternity
+    - Was Wilson a member of the Phi Kappa Psi fraternity
+    - Was Wilson an automobile enthusiast
+    - Was Wilson an automobile enthusiast
+    - Did Wilsons father own slaves
+    - Did Wilsons father own slaves
+    - Where is Wilson buried
+    - Where is Wilson buried
+    - Where did Wilson attend law school
+    - Where did Wilson attend law school
+    - Where was Woodrow Wilson born
+    - Where was Woodrow Wilson born
+    - Did Wilson support desegregation
+    - Did Wilson support desegregation
+    - Did Wilson support the committee system
+    - Did Wilson support the committee system
+    - Did Wilson have any siblings
+    - What was ScotsIrish and Scottish
+    - What defended slavery owned slaves and set up a Sunday school for them
+    - Who did Wilson win in 1917
+    - Was Wilson awarded the 1919 Nobel Peace Prize
+    - Was Wilson a remarkably effective writer and thinker
+    - What lived in Columbia
+    - Was Wilson president of the American Political Science Association in 1910
+    - Did he not cast his ballot for John M Palmer  the presidential candidate of the National Democratic Party  or Gold Democrats  a shortlived party that supported a gold standard  low tariffs  and limited government
+    - Did Wilson not spend 1914 through the beginning of 1917 trying to keep America out of the war in Europe
+    - Was Wilson  a staunch opponent of antisemitism  sympathetic to the plight of Jews  especially in Poland and in France
+    - What happened in 1917
+    - How many days do we have in a week
+    - How many days are there in a normal year
+    - How many colors are there in a rainbow
+    - Which animal is known as the  Ship of the Desert
+    - How many letters are there in the English alphabet
+    - How many consonants are there in the English alphabet
+    - How many sides are there in a triangle
+    - Which month of the year has the least number of days
+    - Which are the vowels in the English alphabet
+    - Which animal is called King of Jungle
+    - How many primary colors are there
+    - How many days are there in the month of February in a leap year
+    - Which is the largest animal in the world
+    - Which is the tallest animal on the earth
+    - Which festival is known as the festival of colors
+    - Which festival is called the festival of light
+    - What is the top color in a rainbow
+    - What type of bird lays the largest eggs
+    - Which festival is known as the Festival of flowers
+    - Which is the worlds larges
+    - How many weeks are there in one year
+    - Which are the colors in a rainbow
+    - How many bones does an adult human have
+    - Who was the first man to walk on the moon
+    - Which is the nearest star to planet earth
+    - Which is the longest river on the earth
+    - Which is the principal source of energy for earth
+    - How many lungs does the human body have
+    - What is the standard taste of the water
+    - Which is the fastest animal on the land
+    - Which continent is known as Dark continent
+    - Which planet is known as the Red Planet
+    - Which is the most sensitive organ in our body
+    - Which is the largest ocean in the world
+    - Which day is observed as World Environment Day
+    - Which is the largest country in the world
+    - How many players are there in a cricket team
+    - Which place is known as the roof of the world
+    - How many teeth does a healthy adult have including the wisdom teeth
+    - Which gas is most abundant in the earths atmosphere
+    - How many people are there in the world
+    - Which is the continent with the most number of countries
+    - Which is the most common non contagious disease in the world
+    - How many strings does a violin have
+    - How many planets are there in our solar system
+    - Which is the hottest continent on Earth
+    - Which is the smallest continent in the world
+    - How many years are there in a millennium
+    - Which country is home to the kangaro
+    - Who painted the Mona Lisa
+    - What does the Internet prefix WWW stand for
+    - How much of Earths surface is covered by ocean
+    - How many stars are there in the American fla
+    - Which is the coldest location in the earth
+    - Which is the most widely spoken language in the world
+    - Which two parts of the body continue to grow for your entire life
+    - The largest Democracy in the world
+    - Which is the largest plateau in the world
+    - Which is the instrument used to measure Blood pressure
+    - What color symbolizes peace
+    - Global warming is caused by the excess of which type of gas
+    - How many cards are there in a complete pack of cards
+    - What is the name of the biggest rain forest in the world
+    - Which African nation is famous for chocolate
+    - What makes up  approx 80 percent of our brains volume
+    - Which instrument is used for measuring wind speed
+    - Stars and Stripes is the nickname of the flag of which country
+    - Which language is used by the computer to process data
+    - What covers approximately 71 of the Earths surface  Land or water
+    - Which is the hardest substance available on earth
+    - Which is the biggest desert in the world
+    - Which country gifted The Statue of Liberty to the United States
+    - What is the name of the Greek God of music
+    - Which is the first element on the periodic table of elements
+    - Which is the longest written Constitution in the world
+    - What is the largest joint in the human body
+    - Which is the smallest bone in the human body
+    - Which is the largest continent in the world
+    - Who is the first woman to go to space
+    - Who was the first president of the United States
+    - What is the tallest building in the world
+    - How many nickels are in a dollar
+    - What are the olympic medals made out of
+    - What is the fastest land animal
+    - Who was the first woman to fly across the Atlantic
+    - How many bones does a shark have
+    - How many strings does a guitar have
+    - What school does Harry Potter go to
+    - What kind of animal only eats meat
+    - What was the strongest house made of in the Three Little Pigs
+    - What sport are you not allowed to use your hands in
+    - Which superhero swings on a web
+    - How many legs does a spider have
+    - What is the capital of the United States
+    - What is the largest mountain in the world
+- intent: bot_challenge2
+  examples: |
+    - will you change my diaper
+    - Do you have a hobby
+    - what is your hobby
+    - Tell me about your personality
+    - do you have Maother
+    - Do you have Father
+    - Do You Have a Girlfreind
+    - Do You have Boyfreind
+    - Can i kiss you
+    - can you kiss me
+    - i want to kiss you
+    - Do you have parents
+- intent: baby_random_Question
+  examples: |
+     -  I want the truth
+     -  your mother was a hamster
+     -  what happens if you cross the streams
+     -  I have fallen and I can not get
+     -  why so serious
+     -  witness me
+     -  may the force be with you.
+     -  you talking to
+     -  What does it feel like when I hug you
+     -  If you drew everything that came into your head, what would you be drawing right now
+     -  What sounds do you like best and why
+     -  How do you think animals communicate
+     -  Who is your favorite storybook character
+     -  What makes you happy
+     -  if you could do anything what you would do
+     -  What superpower would you like to have?
+     -  Who will you be when you grow up?
+     -  why we eat
+     -  why we drink water
+     -  where you will go if you could fly
+     -  where you will go if you could walk
+     -  would you like to swim like a fish
+     -  What kind of animal would you be
+     -  What would our pet say if they could talk
+     -  What color would you be if you could be any color
+     -  what makes you feel sad
+     -  What holiday do you love
+     -  why sky is blue
+     -  What makes the moon glow
+     -  why math is so boaring
+     -  Why are people so mean
+     -  Why do the people you like not like you back
+     -  Why is the fire hot
+     -  Who was first, the chicken or the egg
+     -  How come I have to go to school
+     -  Why is the water wet
+     -  Why do I have to listen to my parents
+     -  Where are the kids coming from
+     -  Why do I have to drink milk
+
+- intent: bot_challenge_5
+  examples: |
+    - do you eat
+    - what you eat
+    - How old are you?
+    - What’s your age?
+    - What do you do with my data
+    - Where do you live
+    - How many people can you speak to at once
+    - Do you have a job for me? / Where can I apply?
+    - Are you expensive
+    - Who is your boss
+    - Do you get smarter
+    - will you marry me?
+    - Do you love me
+    - will you marry me
+    - who is your boyfreind
+    - what is the name of your boyfreind
+    - You are Beautiful Handsome
+    - You are ugly
+    - you are bad
+    - Who is your ideal
+    - What things you assume i should do
+    - How Should i Study
+    - What is the best way to study
+    - i do not like study
+    - i want to dance
+    - i am feeling Hungry
+    - Give me some food
+    - I want to sing
+    - it was Good
+    - I want to go outside with a mummy
+    - i want to go to market
+    - i want to go to mall
+    - do you want to come with me
+    - tell me something i dont know
+    - what is the best way to express love
+    - How to tell her him that i love her him
+    - Mom Do not Love me
+    - why mom do not love me
+    - why Dad Do not Love me
+    - What is your Favourate Colour
+    - What is your Favourate Birds
+    - Which is Your Favourate Movie Picture
+    - which is Your Favourate place to visit
+    - Which is your Favourate Actress
+    - Which is your Favourate Actor
+    - Why you are so Upset
+    - which is your Favourate Cartoon series
+    - which is your Favourate Song
+    - which is your Favourate Animal
+    - which is Your Favurate  Vegitable
+    -  what is your favorite food
+
+    -  what is your favorite restaurant
+
+    -  what is your favorite local cuisine
+
+    -  what is your favorite take out or delivery food
+
+    -  what is your favorite dessert
+
+    -  what is your favorite meal to cook at home
+
+    -  what is your favorite thing to bake
+
+    -  what is your favorite café
+
+    -  what is your favorite place to get coffee
+
+    -  what is your favorite type of cheese
+
+    -  what is your favorite type of wine
+
+    -  what is your favorite cocktail
+
+    -  what is your favorite pizza toppings
+
+    -  what is your favorite vegetable
+
+    -  what is your favorite fruit
+
+    -  what is your favorite meat
+
+    -  what is your favorite ice cream flavor
+
+    -  what is your favorite fast-food restaurant
+
+    -  what is your favorite type of cookies
+
+    -  what is your favorite sea food
+
+    -  what is your favorite pasta
+
+    -  what is your favorite cake
+
+    -  what is your favorite type of tea
+
+    -  what is your favorite soft drink
+
+    -  what is your favorite thing to eat for breakfast
+
+    -  what is your favorite cooking smell
+
+    -  what is your favorite thanksgiving food
+
+    -  what is your favorite Christmas food
+
+    -  what is your favorite flavor of potato chips
+
+    -  what is your favorite snack
+
+    -  what is your favorite appetizer
+
+    -  what is your favorite junk food
+
+    -  what is your favorite birthday food
+
+    -  what is your favorite childhood meal
+
+    -  what is your favorite Chinese meal
+
+    -  what is your favorite food to eat while watching your favorite show
+
+    -  what is your favorite type of pie
+
+    -  what is your favorite midnight snack
+
+    -  what is your favorite way type of sushi
+
+    -  what is your favorite healthy food
+    -  What is your favorite thing to do
+    -  who is your favourate person
+    - what things motivates you
+    - what is your motivation
+    - what motivates you
+
+
+

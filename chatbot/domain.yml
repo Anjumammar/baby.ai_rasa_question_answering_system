@@ -1,0 +1,155 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - story_play
+  - General_knowledge
+  - song_play
+  - Vocabulary_improve
+  - calculator
+  - bot_challenge2
+  - baby_random_Question
+  - bot_challenge_5
+
+actions:
+  - action_calculator
+  - Action_gk
+  - Action_random_answer
+  - Action_robot_challenge
+
+
+entities:
+  - calc
+  - number
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "Yes I am a robot, but I’m a good one. Let me prove it. How can I help you"
+
+  utter_story_play:
+  - text: "The king wanted to test the advisor’s brilliance and came up with a question “how many birds are there in our kingdom?”
+
+           The advisor answered immediately that there are twenty-eight thousand birds in the kingdom.
+
+           The king was surprised by his answer and asked, “What if there are more birds?” The advisor replied that maybe a few birds from other kingdoms visit our kingdom.
+
+           When asked what if there are a lesser number of birds, the advisor replied birds from our kingdom are visiting other kingdoms too.
+
+           The king enjoyed the clever answers of his advisor.
+
+           Moral of this short story:
+
+           You will find a solution to every question if you think in a simple way."
+  - text: "In a village, there used to live a farmer named Raju, who worked hard to cultivate his crops and lead his family. Every other farmer would receive good benefits from their crops as they used to grow the crops that do not take much time to grow.
+
+           Raju cultivated cotton crops and believed in his hard work to look after their growth. After 6 to 8 months, the cotton crops were fully grown. There was more demand for cotton during that time.
+
+           A cotton textile manager bought all the cotton from Raju and paid a huge amount to him. This way Raju earned profit and was successful in supporting his family.
+           Moral of this short story:
+
+           Believe in yourself and work hard with dedication."
+  - text: "One day, the fox while hunting found a squirrel that was hurt by an accident. The fox was so hungry and was ready to eat the squirrel. The squirrel requested not to kill him as he was already in pain.
+
+           The fox refused and went closer to the squirrel. The squirrel requested that it was his only son’s birthday and he met with an accident while bringing food. The fox was not so cunning and let the squirrel go.
+           After a few months, the squirrel saw a bear getting closer to the fox while the fox was asleep. The squirrel immediately ran to the fox and helped him escape from the bear. The fox was saved by the squirrel and they became good friends.
+
+           Moral of this short story:
+
+           Do not forget to help others when they are in need and they will help you when you need them"
+  - text: "Once upon a time, there lived two talking birds with their parents. One day when their parents were away, a villager who always had an eye on those special birds captured them and took them away.
+
+           One of the birds escaped from the trap and searched for his parents. The Bird finally reached a hermitage where it was invited and had some food. He lived happily.
+
+           A traveler once came across the other bird that was captured by the villager. He spoke very rudely to him. He was surprised to see a talking bird but was also upset with his behavior.
+
+           The traveler visited the hermitage and recognized the similar talking bird but this bird spoke politely and invited him to stay there.
+           Moral of this short story:
+
+           Staying in a good company gives us good behavior. Bad company affects our behavior negatively."
+  - text: "There was a little boy who visited a shop every day but did not buy anything. The shopkeeper gave him a toffee every day even though he knew that the boy had no money.
+           One day, the boy stole a few toffees when the shopkeeper was not looking.
+
+           The shopkeeper while closing the shop remembered that he did not see the mischievous boy that today.
+
+           The boy felt good as he took the toffees without telling the shopkeeper. He ate the toffees and went to sleep.
+
+           The next day he wanted to go to the shop just like he visited every day but he was scared that the shopkeeper would find out. He felt guilty and confessed his mistake.
+           Moral of this short story:
+
+           It is not right to take another’s property without telling them"
+  - text: "In a school, every year the committee conducted the best student award. Every student tried their best to impress the managing team of the committee to select them for the school’s best student award.
+
+           Ajay was not interested in winning the best student award, but he was an ideal student that the school admired. He used to go to school on time and reach home on time. He completed his homework and was always on the merit list.
+
+           He maintained his records in other curriculum activities as well. He was selected for the best student award as he maintained discipline and respected everyone.
+
+           Moral of this short story:
+
+           Discipline is the first principle to achieve anything in life."
+  - text: "A Lion family lived happily in a jungle. There were two cubs in the family. The elder one was always careless of the younger cub. The mother lion always said positive words to the elder cub about family and the jungle. One day, a hunter killed both the parent lions. The younger cub cried and did not know how to talk to his elder brother.
+           The elder one remembered his mother’s words that he ignored and took the responsibility to look after his younger brother and the jungle. From then, the elder one supported the younger cub and took care of him. Both the brothers lived happily and ruled the jungle.
+
+           Moral of this short story:
+
+           We need to take care of our younger ones and take responsibility for our parents."
+  - text: "In a village, the landlord used to lend money for the poor farmers to cultivate the crops. He used to occupy the lands of the farmers if they could not pay the debt in time.
+           The landlord was crooked and cunning. He added more interest to the money and manipulated the illiterate farmers. He occupied the lands of all the farmers even though they paid the amount borrowed.
+
+           One day, a schoolgirl found a book of money calculations near the landlord’s house. She found many mistakes in the calculations. She went to the sarpanch and explained the problem. The landlord was punished and everyone received their own lands.
+
+           Moral of this short story:
+
+           We should do justice to everyone and be loyal to each other."
+  - text: "Once a brass pot and an earthen pot got lost into a river. The river was flowing taking them along with it.
+
+           As they were moving along with the stream, the earthen pot requested the brass pot to stay away from it a little. The brass pot asked: why?
+
+           The earthen pot said I am weaker than you, if you touch me slightly too, I will crush into pieces. So please maintain distance.
+
+           Moral: We may be good, but staying in a powerful and bad company and friendship can harm us. So we should away stay away from friends and peopl who might harm us."
+
+
+
+
+
+
+
+
+  utter_song_play:
+  - text: "i will tell you song after fetching the api."
+
+  utter_Vocabulary_improve:
+  - text: "i will improve your vocabulary after fetching the api."
+
+  utter_calculator:
+  - text: "i will calculate your math after fetching the api."
+  utter_General_knowledge:
+  - text: "i will tell you GK later."
+  utter_botchallenge:
+    - text: "Sorry I am not a Human ,I am a Robot,You Can ask these Question to your beloved ones:"
+
+session_config:
+  session_expiration_time: 80
+  carry_over_slots_to_new_session: true

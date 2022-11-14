@@ -1,0 +1,75 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: story path
+  steps:
+  - intent: story_play
+  - action: utter_story_play
+
+- story: music path
+  steps:
+  - intent: song_play
+  - action: utter_song_play
+- story: GK path
+  steps:
+  - intent: General_knowledge
+  - action: Action_gk
+- story: Vocab_path
+  steps:
+  - intent: Vocabulary_improve
+  - action: utter_Vocabulary_improve
+- story: Vocab_path
+  steps:
+  - intent: Vocabulary_improve
+  - action: utter_Vocabulary_improve
+- story: calc_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: calculator
+  - action: action_calculator
+- story:  path bot_challenge2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge2
+  - action: utter_botchallenge
+- story: random_question
+  steps:
+    - intent: baby_random_Question
+    - action: Action_random_answer
+- story: random_chatboat_challenge
+  steps:
+    - intent: bot_challenge_5
+    - action: Action_robot_challenge
+
+
